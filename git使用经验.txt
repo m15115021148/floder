@@ -1,0 +1,159 @@
+
+window上使用GIT的个人经验（入门级）
+
+
+ 0.安装
+
+使用google上的msysgit 
+
+http://code.google.com/p/msysgit/downloads/list 
+
+尽量用最新版的吧 
+
+1.KEY
+
+关于 key，.ssh里面的key是与服务器通信用的，其他什么用，也不一定要用email，其实随便用什么都可以。
+
+github.com上那个
+
+ssh-keygen -t rsa -C "email"
+
+有误导的成分，其实引号里面的不一定要email随便都可以，只要把本地.ssh/id_rsa.pub里面的东西复制到github里面的public ssh key就可以了。
+
+2.大小区分的问题
+
+开始在github上建了个项目，在本地使用了$ git  remote add git@github.com:{user}/{project}.git，结果因为输入是大小写跟服务器上不一致，导致找不到项目，郁闷啦，最郁闷的是，在windows上重新按正确的大小写add一次，提示已经存在，最后的解决办法是先删除，然后在添加
+
+ 
+git remote rm origin
+
+ 3.Bash粘贴
+
+默认情况下Git Bash居然不支持粘贴，在我输入api key的时候最郁闷，后来解决方法是在Bash窗口上点右键 选择Properties把QuiteEditMode，InsertMode复选框勾上。
+
+ 
+
+ 4.使用GitHub.com服务器
+
+开始的时候以为设置加密就可了，原来还有一个apiKey和用户输入
+
+也就是在config里面配置github.com里的用户名和邮箱
+
+$ git config --global github.user "youruser" 
+
+$ git config --global github.token yourtoken(在GitHub上的account settings>account admin >>api token那串字符)
+
+配置好了，可以通过
+
+$git config --list查看。
+
+ 
+
+5.关于VIM窗口 
+
+开始用git commit 提交的时候是用 -m “message”的
+
+后来直接用git commit 回车后弹出一个窗口，后来才知道是linux下的文本编辑器
+
+郁闷的是半天退出不出来，baidu，google一番，
+
+进入之后是VIM的普通模式，按 i 键，进入INSERT模式，这是可以输入message了。
+
+输入完成之后，按ESC键进入命令模式 ，输入冒号（在窗口下面显示），然后输入x，回车就OK了。
+
+ 
+
+其实可以用记事本代替vim，
+
+输入如下配置：
+
+git config --global core.editor C:/windows/notepad.exe 
+
+ 
+
+6.清楚Bash里面的历史记录
+
+其实就是Linux清楚历史命令，直接输入$ history -c 
+
+ 
+
+7.关于Tag
+
+打tag很简单，所谓“会者不难难者不会”，直接使用git  tag -a tagname -m“mesage”
+
+打完tag要显示的push，使用命令git push origin tangname，这样别人才能看到
+
+切换到tag下面用git checkout tagname， 
+
+删除tag：git tag -d tagname
+
+远程删除：git push origin :refs/tags/tagname
+
+ 
+
+8.关于Branch
+
+git branch 不带参数：列出本地已经存在的分支，并且在当前分支的前面加“*”号标记
+
+git branch -r 列出远程分支
+
+git branch -a 列出本地和远程分支
+
+git branch BranchName 创建新的 本地 Branch
+
+git branch -d Branchname 删除branch
+
+git branch -d -r Branchname 删除远程branch（例git branch -d -r origin/aa)
+
+git push <remote repository> <local branch> 把本地branch 推送到远程服务器
+
+ 
+error: dst refspec notmaster matches more than one.
+
+
+That's because I had a tag with the same name as the branch. This was a poor choice on my behalf and caused the ambiguity. So in that case:
+$ git push origin :refs/heads/notmaster
+http://stackoverflow.com/questions/2003505/how-do-i-delete-a-git-branch-both-locally-and-in-github
+
+ 
+
+ 
+
+9.关于GITK
+
+推荐一篇好的文章
+
+http://lostechies.com/joshuaflanagan/2010/09/03/use-gitk-to-understand-git/ 
+
+ 
+
+10.返回命令窗口 
+
+以前一直很郁闷，输入了git log之后不知道怎么返回到命令窗口，就直接关闭整个窗口，
+
+今天用git show tagname也出现了这个问题，经过摸索发现其实很简单
+
+输入q，其他键盘会继续显示剩余log（如果有的话）
+
+也就是Linux的退出命令 
+
+ 
+
+11.文件还原
+
+用了一段时间发现文件还原很重要，之前不知道怎么弄，装了TortoiseGit用上面的Revert菜单。
+
+其实用GIT命令是这样滴：
+
+a，如果文件修改了但是没有提交(commit)，直接用git checkout -f
+
+b,如果修改了并提交了，
+
+可以用 git revert HEAD
+
+可以用git reset --hard HEAD 
+
+ 
+
+fatal: git clone could not read password for
+git config --global core.askpass /usr/libexec/git-core/git-gui--askpass

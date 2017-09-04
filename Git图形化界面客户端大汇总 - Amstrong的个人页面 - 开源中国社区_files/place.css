@@ -1,0 +1,636 @@
+*[data-emoji~='house'] {
+	background: url("../images/emoji/place.png") no-repeat 0px 0px rgba(0, 0, 0, 0);
+}
+emoji[data-emoji~='house'] {
+	background-position: -7px -7px;
+}
+*[data-emoji~='house_with_garden'] {
+	background: url("../images/emoji/place.png") no-repeat -38px 0px rgba(0, 0, 0, 0);
+}
+emoji[data-emoji~='house_with_garden'] {
+	background-position: -45px -7px;
+}
+*[data-emoji~='school'] {
+	background: url("../images/emoji/place.png") no-repeat -76px 0px rgba(0, 0, 0, 0);
+}
+emoji[data-emoji~='school'] {
+	background-position: -83px -7px;
+}
+*[data-emoji~='office'] {
+	background: url("../images/emoji/place.png") no-repeat -114px 0px rgba(0, 0, 0, 0);
+}
+emoji[data-emoji~='office'] {
+	background-position: -121px -7px;
+}
+*[data-emoji~='post_office'] {
+	background: url("../images/emoji/place.png") no-repeat -152px 0px rgba(0, 0, 0, 0);
+}
+emoji[data-emoji~='post_office'] {
+	background-position: -159px -7px;
+}
+*[data-emoji~='hospital'] {
+	background: url("../images/emoji/place.png") no-repeat -190px 0px rgba(0, 0, 0, 0);
+}
+emoji[data-emoji~='hospital'] {
+	background-position: -197px -7px;
+}
+*[data-emoji~='bank'] {
+	background: url("../images/emoji/place.png") no-repeat -228px 0px rgba(0, 0, 0, 0);
+}
+emoji[data-emoji~='bank'] {
+	background-position: -235px -7px;
+}
+*[data-emoji~='convenience_store'] {
+	background: url("../images/emoji/place.png") no-repeat -266px 0px rgba(0, 0, 0, 0);
+}
+emoji[data-emoji~='convenience_store'] {
+	background-position: -273px -7px;
+}
+*[data-emoji~='love_hotel'] {
+	background: url("../images/emoji/place.png") no-repeat -304px 0px rgba(0, 0, 0, 0);
+}
+emoji[data-emoji~='love_hotel'] {
+	background-position: -311px -7px;
+}
+*[data-emoji~='hotel'] {
+	background: url("../images/emoji/place.png") no-repeat -342px 0px rgba(0, 0, 0, 0);
+}
+emoji[data-emoji~='hotel'] {
+	background-position: -349px -7px;
+}
+*[data-emoji~='wedding'] {
+	background: url("../images/emoji/place.png") no-repeat -380px 0px rgba(0, 0, 0, 0);
+}
+emoji[data-emoji~='wedding'] {
+	background-position: -387px -7px;
+}
+*[data-emoji~='church'] {
+	background: url("../images/emoji/place.png") no-repeat -418px 0px rgba(0, 0, 0, 0);
+}
+emoji[data-emoji~='church'] {
+	background-position: -425px -7px;
+}
+*[data-emoji~='department_store'] {
+	background: url("../images/emoji/place.png") no-repeat -456px 0px rgba(0, 0, 0, 0);
+}
+emoji[data-emoji~='department_store'] {
+	background-position: -463px -7px;
+}
+*[data-emoji~='european_post_office'] {
+	background: url("../images/emoji/place.png") no-repeat -494px 0px rgba(0, 0, 0, 0);
+}
+emoji[data-emoji~='european_post_office'] {
+	background-position: -501px -7px;
+}
+*[data-emoji~='city_sunrise'] {
+	background: url("../images/emoji/place.png") no-repeat -532px 0px rgba(0, 0, 0, 0);
+}
+emoji[data-emoji~='city_sunrise'] {
+	background-position: -539px -7px;
+}
+*[data-emoji~='city_sunset'] {
+	background: url("../images/emoji/place.png") no-repeat -570px 0px rgba(0, 0, 0, 0);
+}
+emoji[data-emoji~='city_sunset'] {
+	background-position: -577px -7px;
+}
+*[data-emoji~='japanese_castle'] {
+	background: url("../images/emoji/place.png") no-repeat -608px 0px rgba(0, 0, 0, 0);
+}
+emoji[data-emoji~='japanese_castle'] {
+	background-position: -615px -7px;
+}
+*[data-emoji~='european_castle'] {
+	background: url("../images/emoji/place.png") no-repeat -646px 0px rgba(0, 0, 0, 0);
+}
+emoji[data-emoji~='european_castle'] {
+	background-position: -653px -7px;
+}
+*[data-emoji~='tent'] {
+	background: url("../images/emoji/place.png") no-repeat -684px 0px rgba(0, 0, 0, 0);
+}
+emoji[data-emoji~='tent'] {
+	background-position: -691px -7px;
+}
+*[data-emoji~='factory'] {
+	background: url("../images/emoji/place.png") no-repeat -722px 0px rgba(0, 0, 0, 0);
+}
+emoji[data-emoji~='factory'] {
+	background-position: -729px -7px;
+}
+*[data-emoji~='tokyo_tower'] {
+	background: url("../images/emoji/place.png") no-repeat 0px -36px rgba(0, 0, 0, 0);
+}
+emoji[data-emoji~='tokyo_tower'] {
+	background-position: -7px -43px;
+}
+*[data-emoji~='japan'] {
+	background: url("../images/emoji/place.png") no-repeat -38px -36px rgba(0, 0, 0, 0);
+}
+emoji[data-emoji~='japan'] {
+	background-position: -45px -43px;
+}
+*[data-emoji~='mount_fuji'] {
+	background: url("../images/emoji/place.png") no-repeat -76px -36px rgba(0, 0, 0, 0);
+}
+emoji[data-emoji~='mount_fuji'] {
+	background-position: -83px -43px;
+}
+*[data-emoji~='sunrise_over_mountains'] {
+	background: url("../images/emoji/place.png") no-repeat -114px -36px rgba(0, 0, 0, 0);
+}
+emoji[data-emoji~='sunrise_over_mountains'] {
+	background-position: -121px -43px;
+}
+*[data-emoji~='sunrise'] {
+	background: url("../images/emoji/place.png") no-repeat -152px -36px rgba(0, 0, 0, 0);
+}
+emoji[data-emoji~='sunrise'] {
+	background-position: -159px -43px;
+}
+*[data-emoji~='stars'] {
+	background: url("../images/emoji/place.png") no-repeat -190px -36px rgba(0, 0, 0, 0);
+}
+emoji[data-emoji~='stars'] {
+	background-position: -197px -43px;
+}
+*[data-emoji~='statue_of_liberty'] {
+	background: url("../images/emoji/place.png") no-repeat -228px -36px rgba(0, 0, 0, 0);
+}
+emoji[data-emoji~='statue_of_liberty'] {
+	background-position: -235px -43px;
+}
+*[data-emoji~='bridge_at_night'] {
+	background: url("../images/emoji/place.png") no-repeat -266px -36px rgba(0, 0, 0, 0);
+}
+emoji[data-emoji~='bridge_at_night'] {
+	background-position: -273px -43px;
+}
+*[data-emoji~='carousel_horse'] {
+	background: url("../images/emoji/place.png") no-repeat -304px -36px rgba(0, 0, 0, 0);
+}
+emoji[data-emoji~='carousel_horse'] {
+	background-position: -311px -43px;
+}
+*[data-emoji~='rainbow'] {
+	background: url("../images/emoji/place.png") no-repeat -342px -36px rgba(0, 0, 0, 0);
+}
+emoji[data-emoji~='rainbow'] {
+	background-position: -349px -43px;
+}
+*[data-emoji~='ferris_wheel'] {
+	background: url("../images/emoji/place.png") no-repeat -380px -36px rgba(0, 0, 0, 0);
+}
+emoji[data-emoji~='ferris_wheel'] {
+	background-position: -387px -43px;
+}
+*[data-emoji~='fountain'] {
+	background: url("../images/emoji/place.png") no-repeat -418px -36px rgba(0, 0, 0, 0);
+}
+emoji[data-emoji~='fountain'] {
+	background-position: -425px -43px;
+}
+*[data-emoji~='roller_coaster'] {
+	background: url("../images/emoji/place.png") no-repeat -456px -36px rgba(0, 0, 0, 0);
+}
+emoji[data-emoji~='roller_coaster'] {
+	background-position: -463px -43px;
+}
+*[data-emoji~='ship'] {
+	background: url("../images/emoji/place.png") no-repeat -494px -36px rgba(0, 0, 0, 0);
+}
+emoji[data-emoji~='ship'] {
+	background-position: -501px -43px;
+}
+*[data-emoji~='speedboat'] {
+	background: url("../images/emoji/place.png") no-repeat -532px -36px rgba(0, 0, 0, 0);
+}
+emoji[data-emoji~='speedboat'] {
+	background-position: -539px -43px;
+}
+*[data-emoji~='boat'] {
+	background: url("../images/emoji/place.png") no-repeat -570px -36px rgba(0, 0, 0, 0);
+}
+emoji[data-emoji~='boat'] {
+	background-position: -577px -43px;
+}
+*[data-emoji~='sailboat'] {
+	background: url("../images/emoji/place.png") no-repeat -608px -36px rgba(0, 0, 0, 0);
+}
+emoji[data-emoji~='sailboat'] {
+	background-position: -615px -43px;
+}
+*[data-emoji~='rowboat'] {
+	background: url("../images/emoji/place.png") no-repeat -646px -36px rgba(0, 0, 0, 0);
+}
+emoji[data-emoji~='rowboat'] {
+	background-position: -653px -43px;
+}
+*[data-emoji~='anchor'] {
+	background: url("../images/emoji/place.png") no-repeat -684px -36px rgba(0, 0, 0, 0);
+}
+emoji[data-emoji~='anchor'] {
+	background-position: -691px -43px;
+}
+*[data-emoji~='rocket'] {
+	background: url("../images/emoji/place.png") no-repeat -722px -36px rgba(0, 0, 0, 0);
+}
+emoji[data-emoji~='rocket'] {
+	background-position: -729px -43px;
+}
+*[data-emoji~='airplane'] {
+	background: url("../images/emoji/place.png") no-repeat 0px -72px rgba(0, 0, 0, 0);
+}
+emoji[data-emoji~='airplane'] {
+	background-position: -7px -79px;
+}
+*[data-emoji~='helicopter'] {
+	background: url("../images/emoji/place.png") no-repeat -38px -72px rgba(0, 0, 0, 0);
+}
+emoji[data-emoji~='helicopter'] {
+	background-position: -45px -79px;
+}
+*[data-emoji~='steam_locomotive'] {
+	background: url("../images/emoji/place.png") no-repeat -76px -72px rgba(0, 0, 0, 0);
+}
+emoji[data-emoji~='steam_locomotive'] {
+	background-position: -83px -79px;
+}
+*[data-emoji~='tram'] {
+	background: url("../images/emoji/place.png") no-repeat -114px -72px rgba(0, 0, 0, 0);
+}
+emoji[data-emoji~='tram'] {
+	background-position: -121px -79px;
+}
+*[data-emoji~='mountain_railway'] {
+	background: url("../images/emoji/place.png") no-repeat -152px -72px rgba(0, 0, 0, 0);
+}
+emoji[data-emoji~='mountain_railway'] {
+	background-position: -159px -79px;
+}
+*[data-emoji~='bike'] {
+	background: url("../images/emoji/place.png") no-repeat -190px -72px rgba(0, 0, 0, 0);
+}
+emoji[data-emoji~='bike'] {
+	background-position: -197px -79px;
+}
+*[data-emoji~='aerial_tramway'] {
+	background: url("../images/emoji/place.png") no-repeat -228px -72px rgba(0, 0, 0, 0);
+}
+emoji[data-emoji~='aerial_tramway'] {
+	background-position: -235px -79px;
+}
+*[data-emoji~='suspension_railway'] {
+	background: url("../images/emoji/place.png") no-repeat -266px -72px rgba(0, 0, 0, 0);
+}
+emoji[data-emoji~='suspension_railway'] {
+	background-position: -273px -79px;
+}
+*[data-emoji~='mountain_cableway'] {
+	background: url("../images/emoji/place.png") no-repeat -304px -72px rgba(0, 0, 0, 0);
+}
+emoji[data-emoji~='mountain_cableway'] {
+	background-position: -311px -79px;
+}
+*[data-emoji~='tractor'] {
+	background: url("../images/emoji/place.png") no-repeat -342px -72px rgba(0, 0, 0, 0);
+}
+emoji[data-emoji~='tractor'] {
+	background-position: -349px -79px;
+}
+*[data-emoji~='blue_car'] {
+	background: url("../images/emoji/place.png") no-repeat -380px -72px rgba(0, 0, 0, 0);
+}
+emoji[data-emoji~='blue_car'] {
+	background-position: -387px -79px;
+}
+*[data-emoji~='oncoming_automobile'] {
+	background: url("../images/emoji/place.png") no-repeat -418px -72px rgba(0, 0, 0, 0);
+}
+emoji[data-emoji~='oncoming_automobile'] {
+	background-position: -425px -79px;
+}
+*[data-emoji~='car'] {
+	background: url("../images/emoji/place.png") no-repeat -456px -72px rgba(0, 0, 0, 0);
+}
+emoji[data-emoji~='car'] {
+	background-position: -463px -79px;
+}
+*[data-emoji~='red_car'] {
+	background: url("../images/emoji/place.png") no-repeat -494px -72px rgba(0, 0, 0, 0);
+}
+emoji[data-emoji~='red_car'] {
+	background-position: -501px -79px;
+}
+*[data-emoji~='taxi'] {
+	background: url("../images/emoji/place.png") no-repeat -532px -72px rgba(0, 0, 0, 0);
+}
+emoji[data-emoji~='taxi'] {
+	background-position: -539px -79px;
+}
+*[data-emoji~='oncoming_taxi'] {
+	background: url("../images/emoji/place.png") no-repeat -570px -72px rgba(0, 0, 0, 0);
+}
+emoji[data-emoji~='oncoming_taxi'] {
+	background-position: -577px -79px;
+}
+*[data-emoji~='articulated_lorry'] {
+	background: url("../images/emoji/place.png") no-repeat -608px -72px rgba(0, 0, 0, 0);
+}
+emoji[data-emoji~='articulated_lorry'] {
+	background-position: -615px -79px;
+}
+*[data-emoji~='bus'] {
+	background: url("../images/emoji/place.png") no-repeat -646px -72px rgba(0, 0, 0, 0);
+}
+emoji[data-emoji~='bus'] {
+	background-position: -653px -79px;
+}
+*[data-emoji~='oncoming_bus'] {
+	background: url("../images/emoji/place.png") no-repeat -684px -72px rgba(0, 0, 0, 0);
+}
+emoji[data-emoji~='oncoming_bus'] {
+	background-position: -691px -79px;
+}
+*[data-emoji~='rotating_light'] {
+	background: url("../images/emoji/place.png") no-repeat -722px -72px rgba(0, 0, 0, 0);
+}
+emoji[data-emoji~='rotating_light'] {
+	background-position: -729px -79px;
+}
+*[data-emoji~='police_car'] {
+	background: url("../images/emoji/place.png") no-repeat 0px -108px rgba(0, 0, 0, 0);
+}
+emoji[data-emoji~='police_car'] {
+	background-position: -7px -115px;
+}
+*[data-emoji~='oncoming_police_car'] {
+	background: url("../images/emoji/place.png") no-repeat -38px -108px rgba(0, 0, 0, 0);
+}
+emoji[data-emoji~='oncoming_police_car'] {
+	background-position: -45px -115px;
+}
+*[data-emoji~='fire_engine'] {
+	background: url("../images/emoji/place.png") no-repeat -76px -108px rgba(0, 0, 0, 0);
+}
+emoji[data-emoji~='fire_engine'] {
+	background-position: -83px -115px;
+}
+*[data-emoji~='ambulance'] {
+	background: url("../images/emoji/place.png") no-repeat -114px -108px rgba(0, 0, 0, 0);
+}
+emoji[data-emoji~='ambulance'] {
+	background-position: -121px -115px;
+}
+*[data-emoji~='minibus'] {
+	background: url("../images/emoji/place.png") no-repeat -152px -108px rgba(0, 0, 0, 0);
+}
+emoji[data-emoji~='minibus'] {
+	background-position: -159px -115px;
+}
+*[data-emoji~='truck'] {
+	background: url("../images/emoji/place.png") no-repeat -190px -108px rgba(0, 0, 0, 0);
+}
+emoji[data-emoji~='truck'] {
+	background-position: -197px -115px;
+}
+*[data-emoji~='train'] {
+	background: url("../images/emoji/place.png") no-repeat -228px -108px rgba(0, 0, 0, 0);
+}
+emoji[data-emoji~='train'] {
+	background-position: -235px -115px;
+}
+*[data-emoji~='station'] {
+	background: url("../images/emoji/place.png") no-repeat -266px -108px rgba(0, 0, 0, 0);
+}
+emoji[data-emoji~='station'] {
+	background-position: -273px -115px;
+}
+*[data-emoji~='train2'] {
+	background: url("../images/emoji/place.png") no-repeat -304px -108px rgba(0, 0, 0, 0);
+}
+emoji[data-emoji~='train2'] {
+	background-position: -311px -115px;
+}
+*[data-emoji~='bullettrain_front'] {
+	background: url("../images/emoji/place.png") no-repeat -342px -108px rgba(0, 0, 0, 0);
+}
+emoji[data-emoji~='bullettrain_front'] {
+	background-position: -349px -115px;
+}
+*[data-emoji~='bullettrain_side'] {
+	background: url("../images/emoji/place.png") no-repeat -380px -108px rgba(0, 0, 0, 0);
+}
+emoji[data-emoji~='bullettrain_side'] {
+	background-position: -387px -115px;
+}
+*[data-emoji~='light_rail'] {
+	background: url("../images/emoji/place.png") no-repeat -418px -108px rgba(0, 0, 0, 0);
+}
+emoji[data-emoji~='light_rail'] {
+	background-position: -425px -115px;
+}
+*[data-emoji~='monorail'] {
+	background: url("../images/emoji/place.png") no-repeat -456px -108px rgba(0, 0, 0, 0);
+}
+emoji[data-emoji~='monorail'] {
+	background-position: -463px -115px;
+}
+*[data-emoji~='railway_car'] {
+	background: url("../images/emoji/place.png") no-repeat -494px -108px rgba(0, 0, 0, 0);
+}
+emoji[data-emoji~='railway_car'] {
+	background-position: -501px -115px;
+}
+*[data-emoji~='trolleybus'] {
+	background: url("../images/emoji/place.png") no-repeat -532px -108px rgba(0, 0, 0, 0);
+}
+emoji[data-emoji~='trolleybus'] {
+	background-position: -539px -115px;
+}
+*[data-emoji~='ticket'] {
+	background: url("../images/emoji/place.png") no-repeat -570px -108px rgba(0, 0, 0, 0);
+}
+emoji[data-emoji~='ticket'] {
+	background-position: -577px -115px;
+}
+*[data-emoji~='fuelpump'] {
+	background: url("../images/emoji/place.png") no-repeat -608px -108px rgba(0, 0, 0, 0);
+}
+emoji[data-emoji~='fuelpump'] {
+	background-position: -615px -115px;
+}
+*[data-emoji~='vertical_traffic_light'] {
+	background: url("../images/emoji/place.png") no-repeat -646px -108px rgba(0, 0, 0, 0);
+}
+emoji[data-emoji~='vertical_traffic_light'] {
+	background-position: -653px -115px;
+}
+*[data-emoji~='traffic_light'] {
+	background: url("../images/emoji/place.png") no-repeat -684px -108px rgba(0, 0, 0, 0);
+}
+emoji[data-emoji~='traffic_light'] {
+	background-position: -691px -115px;
+}
+*[data-emoji~='warning'] {
+	background: url("../images/emoji/place.png") no-repeat -722px -108px rgba(0, 0, 0, 0);
+}
+emoji[data-emoji~='warning'] {
+	background-position: -729px -115px;
+}
+*[data-emoji~='construction'] {
+	background: url("../images/emoji/place.png") no-repeat 0px -144px rgba(0, 0, 0, 0);
+}
+emoji[data-emoji~='construction'] {
+	background-position: -7px -151px;
+}
+*[data-emoji~='beginner'] {
+	background: url("../images/emoji/place.png") no-repeat -38px -144px rgba(0, 0, 0, 0);
+}
+emoji[data-emoji~='beginner'] {
+	background-position: -45px -151px;
+}
+*[data-emoji~='atm'] {
+	background: url("../images/emoji/place.png") no-repeat -76px -144px rgba(0, 0, 0, 0);
+}
+emoji[data-emoji~='atm'] {
+	background-position: -83px -151px;
+}
+*[data-emoji~='slot_machine'] {
+	background: url("../images/emoji/place.png") no-repeat -114px -144px rgba(0, 0, 0, 0);
+}
+emoji[data-emoji~='slot_machine'] {
+	background-position: -121px -151px;
+}
+*[data-emoji~='busstop'] {
+	background: url("../images/emoji/place.png") no-repeat -152px -144px rgba(0, 0, 0, 0);
+}
+emoji[data-emoji~='busstop'] {
+	background-position: -159px -151px;
+}
+*[data-emoji~='barber'] {
+	background: url("../images/emoji/place.png") no-repeat -190px -144px rgba(0, 0, 0, 0);
+}
+emoji[data-emoji~='barber'] {
+	background-position: -197px -151px;
+}
+*[data-emoji~='hotsprings'] {
+	background: url("../images/emoji/place.png") no-repeat -228px -144px rgba(0, 0, 0, 0);
+}
+emoji[data-emoji~='hotsprings'] {
+	background-position: -235px -151px;
+}
+*[data-emoji~='checkered_flag'] {
+	background: url("../images/emoji/place.png") no-repeat -266px -144px rgba(0, 0, 0, 0);
+}
+emoji[data-emoji~='checkered_flag'] {
+	background-position: -273px -151px;
+}
+*[data-emoji~='crossed_flags'] {
+	background: url("../images/emoji/place.png") no-repeat -304px -144px rgba(0, 0, 0, 0);
+}
+emoji[data-emoji~='crossed_flags'] {
+	background-position: -311px -151px;
+}
+*[data-emoji~='izakaya_lantern'] {
+	background: url("../images/emoji/place.png") no-repeat -342px -144px rgba(0, 0, 0, 0);
+}
+emoji[data-emoji~='izakaya_lantern'] {
+	background-position: -349px -151px;
+}
+*[data-emoji~='moyai'] {
+	background: url("../images/emoji/place.png") no-repeat -380px -144px rgba(0, 0, 0, 0);
+}
+emoji[data-emoji~='moyai'] {
+	background-position: -387px -151px;
+}
+*[data-emoji~='circus_tent'] {
+	background: url("../images/emoji/place.png") no-repeat -418px -144px rgba(0, 0, 0, 0);
+}
+emoji[data-emoji~='circus_tent'] {
+	background-position: -425px -151px;
+}
+*[data-emoji~='performing_arts'] {
+	background: url("../images/emoji/place.png") no-repeat -456px -144px rgba(0, 0, 0, 0);
+}
+emoji[data-emoji~='performing_arts'] {
+	background-position: -463px -151px;
+}
+*[data-emoji~='round_pushpin'] {
+	background: url("../images/emoji/place.png") no-repeat -494px -144px rgba(0, 0, 0, 0);
+}
+emoji[data-emoji~='round_pushpin'] {
+	background-position: -501px -151px;
+}
+*[data-emoji~='triangular_flag_on_post'] {
+	background: url("../images/emoji/place.png") no-repeat -532px -144px rgba(0, 0, 0, 0);
+}
+emoji[data-emoji~='triangular_flag_on_post'] {
+	background-position: -539px -151px;
+}
+*[data-emoji~='jp'] {
+	background: url("../images/emoji/place.png") no-repeat -570px -144px rgba(0, 0, 0, 0);
+}
+emoji[data-emoji~='jp'] {
+	background-position: -577px -151px;
+}
+*[data-emoji~='kr'] {
+	background: url("../images/emoji/place.png") no-repeat -608px -144px rgba(0, 0, 0, 0);
+}
+emoji[data-emoji~='kr'] {
+	background-position: -615px -151px;
+}
+*[data-emoji~='cn'] {
+	background: url("../images/emoji/place.png") no-repeat -646px -144px rgba(0, 0, 0, 0);
+}
+emoji[data-emoji~='cn'] {
+	background-position: -653px -151px;
+}
+*[data-emoji~='us'] {
+	background: url("../images/emoji/place.png") no-repeat -684px -144px rgba(0, 0, 0, 0);
+}
+emoji[data-emoji~='us'] {
+	background-position: -691px -151px;
+}
+*[data-emoji~='fr'] {
+	background: url("../images/emoji/place.png") no-repeat -722px -144px rgba(0, 0, 0, 0);
+}
+emoji[data-emoji~='fr'] {
+	background-position: -729px -151px;
+}
+*[data-emoji~='es'] {
+	background: url("../images/emoji/place.png") no-repeat 0px -180px rgba(0, 0, 0, 0);
+}
+emoji[data-emoji~='es'] {
+	background-position: -7px -187px;
+}
+*[data-emoji~='it'] {
+	background: url("../images/emoji/place.png") no-repeat -38px -180px rgba(0, 0, 0, 0);
+}
+emoji[data-emoji~='it'] {
+	background-position: -45px -187px;
+}
+*[data-emoji~='ru'] {
+	background: url("../images/emoji/place.png") no-repeat -76px -180px rgba(0, 0, 0, 0);
+}
+emoji[data-emoji~='ru'] {
+	background-position: -83px -187px;
+}
+*[data-emoji~='gb'] {
+	background: url("../images/emoji/place.png") no-repeat -114px -180px rgba(0, 0, 0, 0);
+}
+emoji[data-emoji~='gb'] {
+	background-position: -121px -187px;
+}
+*[data-emoji~='uk'] {
+	background: url("../images/emoji/place.png") no-repeat -152px -180px rgba(0, 0, 0, 0);
+}
+emoji[data-emoji~='uk'] {
+	background-position: -159px -187px;
+}
+*[data-emoji~='de'] {
+	background: url("../images/emoji/place.png") no-repeat -190px -180px rgba(0, 0, 0, 0);
+}
+emoji[data-emoji~='de'] {
+	background-position: -197px -187px;
+}

@@ -1,0 +1,2060 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3c.org/TR/1999/REC-html401-19991224/loose.dtd">
+<!-- saved from url=(0059)http://my.oschina.net/amstrong/blog/159114 -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><HTML 
+lang="zh-CN" lang="zh-CN" xml:lang="zh-CN" 
+xmlns="http://www.w3.org/1999/xhtml"><HEAD><META content="IE=11.0000" 
+http-equiv="X-UA-Compatible">
+   
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">   
+<META http-equiv="Content-Language" content="zh-CN">   
+<META name="robots" content="index, follow">   <LINK href="/img/favicon.ico?t=1451964198000" 
+rel="shortcut icon" type="image/x-icon">   <TITLE>Git图形化界面客户端大汇总 -  
+Amstrong的个人页面 - 开源中国社区</TITLE>     
+<META name="Keywords" content="Git,Github,客户端,GUI,版本控制">       
+<META name="Description" content="Git图形化界面客户端大汇总：一、TortoiseGit&nbsp;- The coolest Interface to Git Version Control TortoiseGit 是&nbsp;TortoiseSVN&nbsp;的&nbsp;..."> 
+    <LINK href="http://my.oschina.net/amstrong/styles.less?ver=20150812&amp;date=20150528204504" 
+rel="stylesheet/less" type="text/css" media="screen">   <LINK href="Git图形化界面客户端大汇总%20-%20Amstrong的个人页面%20-%20开源中国社区_files/tip-yellowsimple.css" 
+rel="stylesheet" type="text/css">   <LINK href="Git图形化界面客户端大汇总%20-%20Amstrong的个人页面%20-%20开源中国社区_files/jquery.fancybox-1.3.4.css" 
+rel="stylesheet" type="text/css" media="screen">	 <!--添加emoji支持-->     <LINK 
+href="Git图形化界面客户端大汇总%20-%20Amstrong的个人页面%20-%20开源中国社区_files/nature.css" rel="stylesheet" 
+type="text/css">     <LINK href="Git图形化界面客户端大汇总%20-%20Amstrong的个人页面%20-%20开源中国社区_files/object.css" 
+rel="stylesheet" type="text/css">     <LINK href="Git图形化界面客户端大汇总%20-%20Amstrong的个人页面%20-%20开源中国社区_files/people.css" 
+rel="stylesheet" type="text/css">     <LINK href="Git图形化界面客户端大汇总%20-%20Amstrong的个人页面%20-%20开源中国社区_files/place.css" 
+rel="stylesheet" type="text/css">     <LINK href="Git图形化界面客户端大汇总%20-%20Amstrong的个人页面%20-%20开源中国社区_files/Sysmbols.css" 
+rel="stylesheet" type="text/css">     <LINK href="Git图形化界面客户端大汇总%20-%20Amstrong的个人页面%20-%20开源中国社区_files/twemoji.css" 
+rel="stylesheet" type="text/css">   
+<SCRIPT src="/js/2012/jquery-1.7.1.min.js?t=1451964198000" type="text/javascript"></SCRIPT>
+   
+<SCRIPT src="/js/2012/jquery.form.js?t=1451964198000" type="text/javascript"></SCRIPT>
+   
+<SCRIPT src="/js/2011/fancybox/jquery.fancybox-1.3.4.pack.js?t=1451964198000?2014031702" type="text/javascript"></SCRIPT>
+   
+<SCRIPT src="/js/2012/poshytip/jquery.poshytip.min.js?t=1451964198000" type="text/javascript"></SCRIPT>
+   
+<SCRIPT src="/js/2011/oschina.js?t=1451964198000" type="text/javascript"></SCRIPT>
+   
+<SCRIPT src="/js/2012/less-1.3.0.min.js?t=1451964198000" type="text/javascript"></SCRIPT>
+   
+<SCRIPT src="/js/scrolltopcontrol.js?t=1451964199000" type="text/javascript"></SCRIPT>
+   
+<SCRIPT src="/js/jquery/jquery.atwho.js?t=1451964198000" type="text/javascript"></SCRIPT>
+   
+<SCRIPT src="/js/lib/angular/angular.min.js?t=1451964198000" type="text/javascript"></SCRIPT>
+   
+<SCRIPT src="/js/lib/angular/angular-sanitize.min.js?t=1451964198000" type="text/javascript"></SCRIPT>
+   
+<SCRIPT src="/js/lib/angular/angular-resource.min.js?t=1451964198000" type="text/javascript"></SCRIPT>
+   <LINK href="Git图形化界面客户端大汇总%20-%20Amstrong的个人页面%20-%20开源中国社区_files/font-awesome.css" 
+rel="stylesheet" type="text/css">   <LINK href="Git图形化界面客户端大汇总%20-%20Amstrong的个人页面%20-%20开源中国社区_files/jquery.atwho.css" 
+rel="stylesheet" type="text/css">   <LINK title="秦殇最新博客" href="http://my.oschina.net/amstrong/rss" 
+rel="alternate" type="application/rss+xml">   <LINK title="RSD" href="http://my.oschina.net/action/xmlrpc/rsd?space=219038" 
+rel="EditURI" type="application/rsd+xml">   <LINK href="http://my.oschina.net/action/xmlrpc/wlwmanifest?space=219038" 
+rel="wlwmanifest" type="application/wlwmanifest+xml">   
+<STYLE type="text/css">
+    body,table,input,textarea,select {font-family:Microsoft YaHei,Verdana,sans-serif,宋体;}
+
+      emoji[data-emoji~=emoji] {
+          display: inline-block;
+          width: 24px;
+          height: 24px;
+          line-height: 24px;
+          vertical-align: top;
+          text-align: center;
+      }
+  </STYLE>
+   
+<SCRIPT type="text/javascript">
+  	scrolltotop.offset(100,165);
+	scrolltotop.init();
+  </SCRIPT>
+ 
+<META name="GENERATOR" content="MSHTML 11.00.10240.16724"></HEAD> 
+<BODY>
+<DIV id="OSC_Screen">
+<STYLE type="text/css">
+    #OSC_Banner {margin: 0 auto;text-align: left;margin-bottom: 5px;height:30px;border-top:0px;}
+    #OSC_Banner a {text-decoration: none;color: #fff;}
+    #OSC_Banner .cs_content a {color: #080;}
+    #OSC_Banner a:hover {color: #eee;}
+	#OSC_Banner a.project{background-color:transparent;}
+    #OSC_Banner #OSC_Channel {float: left;height:30px;}
+    #OSC_Banner #OSC_Channel ul {line-height: 18px;}
+    #OSC_Banner #OSC_Channel ul li.item {float: left;margin: 0 16px 0 0;line-height: 30px;}
+    #OSC_Banner #OSC_Channel ul li a.hl {font-weight: bold;}
+    #OSC_Banner #OSC_Userbar {float: right;	color: #ddd;line-height:30px;margin-right:10px;}
+    #OSC_Banner #OSC_Userbar em {font-style: normal;color: #fff;margin-right: 2px;}
+	/*下拉菜单*/
+	#OSC_Banner .control_select {position: relative;background: url('/img/down3.gif') no-repeat right 14px;padding-right: 8px;cursor: pointer;height: 25px;display: inline-block;z-index: 1001;}
+	#OSC_Banner .control_select a {position: relative;}
+	#OSC_Banner .control_select ul.cs_content {display: none;text-align: left;position: absolute;left: 0px;top: 25px;width: 110px;z-index: 9999;background: white;padding: 5px 0 2px 5px;font-size: 9pt;list-style-type: none;}
+	#OSC_Banner .control_select ul.cs_content li {border: 0;height: 16px;line-height: 16px;margin-bottom: 8px;}
+	#OSC_Banner .control_select ul.cs_content li a:hover {font-weight: bold;background: #fff;color: #A00}
+	#OSC_Banner .group_msg_count {display: inline-block;	padding: 2px;border-radius: 3px;background-color: RGB(255, 113, 112);color: white;font-size: 12px;height: 10px;text-align: center;
+		line-height: 10px;min-width: 15px;box-shadow: 1px 1px 1px RGBA(0, 0, 0, 0.2);-webkit-box-shadow: 1px 1px 1px RGBA(0, 0, 0, 0.2);-moz-box-shadow: 1px 1px 1px RGBA(0, 0, 0, 0.2);}
+	.tip-yellowsimple .tip-arrow-top{left:80%;}
+</STYLE>
+ 
+<SCRIPT type="text/javascript">
+  	g_user = {
+	id:0,
+	name:'',
+	login:false};</SCRIPT>
+ 
+<SCRIPT src="/js/utils.js?t=1451964199000" type="text/javascript"></SCRIPT>
+ 
+<SCRIPT src="/js/channel.js?t=1451964198000?2014022501" type="text/javascript"></SCRIPT>
+ 
+<DIV id="OSC_Banner">
+<DIV id="OSC_Channel" style="margin-left: 10px; float: left;">
+<UL>
+  <LI class="item"><A class="home" href="http://www.oschina.net/">首页</A></LI>
+  <LI class="item control_select"><A class="project" href="http://www.oschina.net/project">开源项目</A>
+  				 
+  <UL class="cs_content">
+    <LI><A href="http://www.oschina.net/project/lang/19/java">Java 开源软件</A></LI>
+    <LI><A href="http://www.oschina.net/project/lang/194/csharp">C# 
+开源软件</A></LI>
+    <LI><A href="http://www.oschina.net/project/lang/22/php">PHP 开源软件</A></LI>
+    <LI><A href="http://www.oschina.net/project/lang/21/c">C/C++ 开源软件</A></LI>
+    <LI><A href="http://www.oschina.net/project/lang/26/ruby">Ruby 开源软件</A></LI>
+    <LI><A href="http://www.oschina.net/project/lang/25/python">Python 
+    开源软件</A></LI>
+    <LI><A href="http://www.oschina.net/project/lang/358/go">Go开源软件</A></LI>
+    <LI><A 
+    href="http://www.oschina.net/project/lang/28/javascript">JS开源软件</A></LI></UL></LI>
+  <LI class="item control_select"><A class="question" href="http://www.oschina.net/question">问答</A>				
+  				
+  <UL class="cs_content">
+    <LI><A href="http://www.oschina.net/question?catalog=1"> 技术问答 » </A></LI>
+    <LI><A href="http://www.oschina.net/question?catalog=2">技术分享 » </A></LI>
+    <LI><A href="http://www.oschina.net/question?catalog=3">IT大杂烩 » </A></LI>
+    <LI><A href="http://www.oschina.net/question?catalog=100">职业生涯 » </A></LI>
+    <LI><A href="http://www.oschina.net/question?catalog=4">站务/建议 » </A></LI>
+    <LI><A href="http://www.oschina.net/alipay">支付宝专区 » </A></LI>
+    <LI><A href="http://www.oschina.net/hardware">开源硬件专区 » </A></LI></UL></LI>
+  <LI class="item"><A class="code" 
+  href="http://www.oschina.net/code/list">代码</A></LI>
+  <LI class="item"><A class="blog" 
+href="http://www.oschina.net/blog">博客</A></LI>
+  <LI class="item"><A class="tran" 
+  href="http://www.oschina.net/translate">翻译</A></LI>
+  <LI class="item"><A class="news" 
+href="http://www.oschina.net/news">资讯</A></LI>
+  <LI class="item control_select"><A class="mobile" href="http://www.oschina.net/android">移动开发</A>
+  				 
+  <UL class="cs_content cs_mobile">
+    <LI class="android_"><A 
+    href="http://www.oschina.net/android">Android开发专区</A></LI>
+    <LI class="ios_"><A href="http://www.oschina.net/ios/home">iOS开发专区</A></LI>
+    <LI class="ios_"><A 
+    href="http://www.oschina.net/ios/codingList">iOS代码库</A></LI>
+    <LI class="wp7_"><A href="http://www.oschina.net/wp">Windows 
+  Phone</A></LI></UL></LI>
+  <LI class="item t_job"><A class="job" 
+  href="http://www.oschina.net/job">招聘</A></LI>
+  <LI class="item control_select"><A title="城市圈" id="MyCities" href="http://city.oschina.net/">城市圈</A>
+  							 </LI></UL></DIV>
+<DIV id="OSC_Userbar">                		    		当前访客身份：游客 [ <A href="http://www.oschina.net/home/login?goto_page=http%3A%2F%2Fmy.oschina.net%2Famstrong%2Fblog%2F159114">登录</A> 
+| <A href="http://www.oschina.net/home/reg">加入开源中国</A> ]    				 </DIV>
+<DIV class="clear"></DIV></DIV>
+<DIV id="OSC_Topbar">
+<DIV id="VisitorInfo">当前访客身份：				游客 [ <A href="http://www.oschina.net/home/login?goto_page=http%3A%2F%2Fmy.oschina.net%2Famstrong">登录</A> 
+| <A href="http://www.oschina.net/home/reg">加入开源中国</A> ]						 </DIV>
+<DIV id="SearchBar">
+<FORM 
+action="http://www.oschina.net/search"><INPUT name="user" type="hidden" value="219038">
+																 <SPAN 
+class="ipt f_l"><INPUT name="q" class="SERACH" id="txt_q" onfocus="if(this.value=='在 40651 款开源软件中搜索'){this.value='';};this.select();" onblur="(this.value=='')?this.value='在 40651 款开源软件中搜索':this.value" type="text" value="在 40651 款开源软件中搜索">
+				 </SPAN>				                 
+<DIV class="search-by selectbox"><SPAN class="hide"><SELECT 
+  name="scope"><OPTION value="project" selected="">软件</OPTION>                   
+        <OPTION value="code">代码</OPTION>                         <OPTION value="bbs">讨论区</OPTION> 
+                          <OPTION value="news">新闻</OPTION>                       
+    <OPTION value="blog">博客</OPTION>    				 </SELECT>    				 </SPAN>             
+      
+<DIV class="search_on" id="search-item"><SPAN class="text">软件</SPAN></DIV>
+<UL class="search_list">
+  <LI class="search-item"><A href="http://my.oschina.net/amstrong/blog/159114?fromerr=aeUMW8K6#1">软件</A></LI>
+  <LI><A 
+  href="http://my.oschina.net/amstrong/blog/159114?fromerr=aeUMW8K6#2">代码</A></LI>
+  <LI><A 
+  href="http://my.oschina.net/amstrong/blog/159114?fromerr=aeUMW8K6#3">讨论区</A></LI>
+  <LI><A 
+  href="http://my.oschina.net/amstrong/blog/159114?fromerr=aeUMW8K6#4">新闻</A></LI>
+  <LI><A 
+  href="http://my.oschina.net/amstrong/blog/159114?fromerr=aeUMW8K6#5">博客</A></LI></UL></DIV><INPUT class="bnt f_r" type="submit" value="搜索">			 
+   		</FORM></DIV>
+<DIV class="clear"></DIV></DIV>
+<DIV id="OSC_Content">
+<STYLE>
+	.icon{width:20px;height:20px;vertical-align: middle;display:inline-block;font-size:14px;text-align:center;color:#FFF;font-weight: bold;}
+	.catalogs{padding:0px;margin:0px;position:relative;display:inline-block;}
+    .catalogs ul{padding:0px;margin:0px;position:absolute;left:-8px;top: -21px;clear:left;width:120px;height:14px;overflow:hidden;background:#FFF;z-index:1000;padding:5px;border:1px solid #FFF;}
+    .catalogs ul:hover{height:auto;background:#fff;border:1px solid #4466bb;}
+    .catalogs ul li a:hover{color:#A00;font-weight: bold;}
+	.BlogStat a:hover{background:#FFF;}
+	.BlogStat{font-size:12px;line-height:20px;}
+	.BlogStat .g{color:#40AA53}
+	.BlogTags{margin-top:8px;}
+		.BlogAbstracts{}
+</STYLE>
+ 
+<DIV id="SpaceLeft">
+<DIV class="Owner"><A class="Img" href="http://my.oschina.net/amstrong"><IMG 
+title="Amstrong" align="absmiddle" class="LargePortrait" alt="Amstrong" src="Git图形化界面客户端大汇总%20-%20Amstrong的个人页面%20-%20开源中国社区_files/219038_100.jpg"></A> 
+    <SPAN class="U"><A title="男" class="Name" href="http://my.oschina.net/amstrong">Amstrong</A> 
+       		 <SPAN class="opts"><IMG title="男" align="absmiddle" src="Git图形化界面客户端大汇总%20-%20Amstrong的个人页面%20-%20开源中国社区_files/men.png"> 
+       			 
+<SCRIPT type="text/javascript">
+var nologin = "<a href='javascript:_follow_nologin()' title='成为TA的粉丝'>关注此人</a>"
+var follow0 = "<a href='javascript:_follow_user(219038,true)' title='成为TA的粉丝'>关注此人</a>";
+var follow1 = "已关注 | <a href='javascript:_follow_user(219038,false)' title='取消关注后，此人的更新信息将不会出现在你的首页'>取消</a>";
+var follow2 = "互相关注 | <a href='javascript:_follow_user(219038,false)' title='取消关注后，此人的更新信息将不会出现在你的首页'>取消</a>";
+var follow4 = "<a href='javascript:_follow_user(219038,true)' title='成为TA的粉丝'>+关注此人</a>";
+
+document.write("<span id='_follow_219038_action_'>");
+	document.write(nologin);
+document.write("</span>");
+
+function _follow_nologin(){
+	if(confirm('必须登录后才能关注，是否现在登录？')){
+		location.href="http://www.oschina.net/home/login?goto_page="+location.href;
+	}
+}
+
+function _follow_user(uid, follow){
+	var action = follow?"/action/user/follow":"/action/user/unfollow";
+	ajax_post(action,"id="+uid+"&user=${g_user.id}",function(result){
+		var act = $('#_follow_219038_action_');
+		if(result == '0')
+			_follow_nologin();
+		else if(result == '1')
+			act.html(follow0);
+		else if(result == '2')
+			act.html(follow1);
+		else if(result == '3')
+			act.html(follow2);
+		else if(result == '4')
+			act.html(follow4);
+	});
+}
+</SCRIPT>
+				</SPAN>     </SPAN>     
+<DIV class="clear"></DIV>
+<DIV class="stat"><A 
+href="http://my.oschina.net/amstrong/fellow">关注<SPAN>(1)</SPAN></A>    	 <A 
+href="http://my.oschina.net/amstrong/fans">粉丝<SPAN>(3)</SPAN></A>    	 <A title="查看OSCHINA积分规则" 
+href="http://www.oschina.net/question/3307_20931">积分<SPAN>(40)</SPAN></A>        
+                    </DIV></DIV>
+<STYLE type="text/css">
+    #Medals {margin-left: 3px; height: 28px;}
+    #Medals li {float: left;margin: 3px 5px;line-height: 24px;}
+    .tip-yellowsimple-medal {
+        z-index: 1000;
+        text-align: left;
+        border: 1px solid #E6DEB6;
+        border-radius: 4px;
+        -moz-border-radius: 4px;
+        -webkit-border-radius: 4px;
+        padding: 6px 8px;
+        min-width: 50px;
+        max-width: 300px;
+        color: #000;
+        background-color: #FFFEF2;
+    }
+	.tip-yellowsimple-medal .tip-arrow-left {
+		visibility: inherit;
+        margin-top: -4px;
+        margin-left: -6px;
+        top: 15px;
+        left: 0;
+        width: 6px;
+        height: 9px;
+        background: url(/js/2012/poshytip/tip-yellowsimple/tip-yellowsimple_arrows.gif?t=1451964198000) no-repeat -27px 0;
+	}
+	div.tip-yellowsimple-medal div.tip-arrow {
+        visibility: hidden;
+        position: absolute;
+        overflow: hidden;
+        font: 1px/1px sans-serif;
+	}
+</STYLE>
+ 
+<SCRIPT type="text/javascript">
+    $(function(){
+        $('#Medals a').poshytip({
+            className: 'tip-yellowsimple-medal',
+            alignTo: 'target',
+            alignX: 'right',
+            alignY: 'bottom',
+            offsetX: 10,
+            offsetY: -30,
+            fade: false,
+            slide: false,
+            content: function(updateCallback) {
+                ajax_get("/action/ajax/get_medal_detail?owner=219038&medalId="+$(this).attr('medalId')+"&time="+new Date().getTime(),false,function(html){
+                    updateCallback(html);
+                    if($('.tip-arrow.tip-arrow-left').last().offset().top >= temp.offset().top) {
+                        $('.tip-arrow.tip-arrow-left').last().css({top : "15px"});
+                    }
+                    else {
+                        $('.tip-arrow.tip-arrow-left').last().css({top : "135px"});
+                    }
+                });
+                temp = $(this);
+                return "<div style='height:100px;'>Loading...</div>";
+            }
+        });
+    });
+</SCRIPT>
+ 
+<STYLE>
+#MyResume textarea {width:170px;height:60px;font-size:9pt;}
+</STYLE>
+ 
+<DIV class="Resume" id="MyResume">Hey, man!</DIV>
+<DIV class="Opts clearfix"><A class="a1 sendmsg" href="javascript:sendmsg(219038, 0)"><I>.</I><SPAN>发送私信</SPAN></A>
+	 <A class="a2 ask" 
+href="http://www.oschina.net/question/ask?user=219038"><I>.</I><SPAN>请教问题</SPAN></A> 
+</DIV>
+<DIV class="Mod" id="BlogCatalogs"><STRONG> 博客分类</STRONG>   
+<UL>
+  <LI><A 
+  href="http://my.oschina.net/amstrong/blog?catalog=445018">Data相关</A><SPAN>(2)</SPAN></LI>
+  <LI><A 
+  href="http://my.oschina.net/amstrong/blog?catalog=3332250">没搞清楚的</A><SPAN>(3)</SPAN></LI>
+  <LI><A 
+  href="http://my.oschina.net/amstrong/blog?catalog=134289">工作日志</A><SPAN>(9)</SPAN></LI>
+  <LI><A 
+  href="http://my.oschina.net/amstrong/blog?catalog=245120">Git相关</A><SPAN>(2)</SPAN></LI>
+  <LI><A 
+  href="http://my.oschina.net/amstrong/blog?catalog=134290">日常记录</A><SPAN>(1)</SPAN></LI>
+  <LI><A 
+  href="http://my.oschina.net/amstrong/blog?catalog=134291">转贴的文章</A><SPAN>(3)</SPAN></LI></UL></DIV>
+<DIV class="Mod" id="HotBlogs"><STRONG>阅读排行</STRONG>   
+<OL>
+  <LI><A href="http://my.oschina.net/amstrong/blog/159114">1. 
+  Git图形化界面客户端大汇总</A></LI>
+  <LI><A href="http://my.oschina.net/amstrong/blog/198588">2. 
+  Python+Selenium+Phantomjs数据抓取环境配置实践</A></LI>
+  <LI><A href="http://my.oschina.net/amstrong/blog/198572">3. 
+  JDK直接删除文件目录无法重装的解决办法</A></LI>
+  <LI><A href="http://my.oschina.net/amstrong/blog/198578">4. VirtualBox 
+  导入vdi文件注意事项 </A></LI>
+  <LI><A href="http://my.oschina.net/amstrong/blog/135083">5. 
+  初用github遇到的问题</A></LI>
+  <LI><A href="http://my.oschina.net/amstrong/blog/208063">6. 文件内的二分查找</A></LI>
+  <LI><A href="http://my.oschina.net/amstrong/blog/178418">7. "mixer system not 
+  initialized" 问题解决方案</A></LI>
+  <LI><A href="http://my.oschina.net/amstrong/blog/396652">8. 
+常遇开发问题集合</A></LI></OL></DIV>
+<DIV class="Mod" id="BlogReplies"><STRONG>最新评论</STRONG>        
+<UL>
+  <LI><A href="http://my.oschina.net/amstrong">@Amstrong</A>：引用来自“whaon”的评论还有这个: 
+  https://git...		 <A href="http://my.oschina.net/action/tweet/go?obj=291499604&amp;type=18&amp;user=219038">查看»</A>
+  	 </LI>
+  <LI><A href="http://my.oschina.net/dxqr">@whaon</A>：还有这个: 
+  https://git-for-windows.github.io/...		 <A href="http://my.oschina.net/action/tweet/go?obj=291485865&amp;type=18&amp;user=115076">查看»</A>
+  	 </LI>
+  <LI><A 
+  href="http://my.oschina.net/amstrong">@Amstrong</A>：引用来自“sosia”的评论gitup大赞！！！那看来要...
+  		 <A href="http://my.oschina.net/action/tweet/go?obj=288465868&amp;type=18&amp;user=219038">查看»</A>
+  	 </LI>
+  <LI><A href="http://my.oschina.net/Sosia">@sosia</A>：gitup大赞！！！		 <A href="http://my.oschina.net/action/tweet/go?obj=288460926&amp;type=18&amp;user=1382680">查看»</A>
+  	 </LI>
+  <LI><A 
+  href="http://my.oschina.net/amstrong">@Amstrong</A>：引用来自“hankland”的评论覆盖安装之后，你的j...
+  		 <A href="http://my.oschina.net/action/tweet/go?obj=286385540&amp;type=18&amp;user=219038">查看»</A>
+  	 </LI>
+  <LI><A href="http://my.oschina.net/u/1027611">@hankland</A>：Java -version 
+  是没问题的		 <A href="http://my.oschina.net/action/tweet/go?obj=286356481&amp;type=18&amp;user=1027611">查看»</A>
+  	 </LI>
+  <LI><A href="http://my.oschina.net/u/1027611">@hankland</A>：覆盖安装之后，你的javac 
+  可以使用？		 <A href="http://my.oschina.net/action/tweet/go?obj=286356478&amp;type=18&amp;user=1027611">查看»</A>
+  	 </LI>
+  <LI><A href="http://my.oschina.net/chen1988">@Simon_1988</A>：看来得买个Mac先啊，		 <A 
+  href="http://my.oschina.net/action/tweet/go?obj=284486328&amp;type=18&amp;user=1165943">查看»</A>
+  	 </LI>
+  <LI><A 
+  href="http://my.oschina.net/ganggangl">@刘刚</A>：引用来自“一线码农”的评论SoureTree不错Sourc...
+  		 <A href="http://my.oschina.net/action/tweet/go?obj=281492705&amp;type=18&amp;user=85211">查看»</A>
+  	 </LI>
+  <LI><A 
+  href="http://my.oschina.net/amstrong">@Amstrong</A>：引用来自“一线码农”的评论SoureTree不错恩，但...
+  		 <A href="http://my.oschina.net/action/tweet/go?obj=280749482&amp;type=18&amp;user=219038">查看»</A>
+  	 </LI></UL></DIV>
+<DIV class="Mod" id="Stat"><STRONG>访客统计</STRONG> 
+<UL>
+  <LI><LABEL>今日访问：</LABEL>9</LI>
+  <LI><LABEL>昨日访问：</LABEL>64</LI>
+  <LI><LABEL>本周访问：</LABEL>9</LI>
+  <LI><LABEL>本月访问：</LABEL>292</LI>
+  <LI><LABEL>所有访问：</LABEL>65159</LI></UL></DIV></DIV><LINK href="Git图形化界面客户端大汇总%20-%20Amstrong的个人页面%20-%20开源中国社区_files/thinker-md.vendor.css" 
+rel="stylesheet" type="text/css"> 
+<SCRIPT src="/js/lib/thinker-md/javascripts/thinker-md.vendor.min.js?t=1451964199000" type="text/javascript"></SCRIPT>
+ 
+<DIV class="SpaceList">
+<DIV class="TopBar">
+<DIV class="NavPath"><A href="http://my.oschina.net/amstrong">空间</A> » <A href="http://my.oschina.net/amstrong/blog">博客</A>
+			 »						 <SPAN class="catalogs">
+<UL>
+  <LI><A 
+href="http://my.oschina.net/amstrong/blog?catalog=245120">Git相关</A></LI>
+  <LI><A 
+  href="http://my.oschina.net/amstrong/blog?catalog=445018">Data相关</A></LI>
+  <LI><A 
+  href="http://my.oschina.net/amstrong/blog?catalog=3332250">没搞清楚的</A></LI>
+  <LI><A href="http://my.oschina.net/amstrong/blog?catalog=134289">工作日志</A></LI>
+  <LI><A href="http://my.oschina.net/amstrong/blog?catalog=134290">日常记录</A></LI>
+  <LI><A 
+href="http://my.oschina.net/amstrong/blog?catalog=134291">转贴的文章</A></LI>
+  <LI><A href="http://my.oschina.net/amstrong/blog">所有分类</A></LI></UL></SPAN>    
+	 </DIV></DIV>
+<DIV class="BlogEntity">
+<DIV class="BlogTitle">
+<H1><SPAN title="原创博客" class="icon" 
+style="background: rgb(68, 172, 87);">原</SPAN>			<SPAN title="首页推荐过的博客" class="icon" 
+style="background: rgb(253, 156, 71);">荐</SPAN>			<SPAN title="个人博客列表置顶博客" 
+class="icon" 
+style="background: rgb(253, 98, 69);">顶</SPAN>									Git图形化界面客户端大汇总</H1>
+<DIV class="BlogStat">    		    		发表于3年前(2013-09-04 15:26)&nbsp;&nbsp;    
+		 阅读（<SPAN class="g">66773</SPAN>）&nbsp;|&nbsp;评论（<A href="http://my.oschina.net/amstrong/blog/159114?fromerr=aeUMW8K6#comments"><SPAN 
+class="g">10</SPAN></A>）    					    	     <SPAN class="admin">
+<STYLE>#TagsSwitcher{color:#A00;}
+#RecTags,#MyTags{margin:5px 0;}
+#RecTags a.tag{line-height:24px;}
+#favor_form p:first-child{margin:5px 0;}
+#favor_form{width:200px;}
+#favor_form p {color:#666;}
+#favor_form form{min-height: 85px;width:200px;}
+#favor_form form ._favor_input{display:block;margin:2px 0;width:199px;}
+#favor_form form ._favor_button{float:left;padding:2px 5px;}
+.favor_ok {text-align:center;font-size:10.5pt;width:199px;height:60px;margin-top:10px;}
+#TagsSwitcher{cursor:pointer;float:right;margin-top:10px;}
+#MyTags{display:none;width:199px;}
+#MyTags a.tag {float:left; background-color: #E0EAF1;border-bottom: 1px solid #3E6D8E;border-right: 1px solid #7F9FB6;color: #3E6D8E;font-size: 8pt;line-height: 16px;margin: 2px 2px 2px 0;padding: 2px 4px;text-decoration: none;white-space: nowrap;}
+#MyTags a.tag:hover{background-color: #3E6D8E;color: #FFF;}
+</STYLE>
+ 
+<SCRIPT type="text/javascript">
+var favor_add = "<a href='javascript:add_to_favor(159114,3)' id='favor_trigger' title='添加到收藏夹'>我要收藏</a>";
+var favor_del = "<a href='javascript:delete_favor(159114,3)' id='favor_trigger' style='color:#a00;'>取消收藏</a>";
+var favor_ok = "<p class='favor_ok'>已成功添加到收藏夹<br/><br/> <a href='null/favorites?type=3'>我的收藏夹</a> | <a href='javascript:close_favor()'>关闭</a></p>";
+function delete_favor(obi_id, obj_type){
+	$('#attention_it').html(favor_add);
+	$("#p_attention_count").load("/action/favorite/cancel?type="+obj_type+"&id="+obi_id, {user: ''});
+}
+function add_to_favor(obj_id, obj_type){
+	if(confirm('必须登录后才能收藏，是否现在登录？')){
+		location.href="http://www.oschina.net/home/login?goto_page="+encodeURIComponent(location.href);
+	}
+}
+function close_favor(elem_id){
+    $('#favor_trigger').poshytip('destroy');
+}
+function setTag(tv){
+	var t = $("._favor_input");
+	var value = t.val();
+	var tags = value.replace(/，/ig,',').split(',');
+	var exist = false;
+	value = $.map(tags,function(v,i){
+		if($.trim(tv) == $.trim(v)){
+			exist = true;
+			return undefined;
+		}
+		return v;
+	}).join(',');
+	if(exist){
+		t.val(value);
+		return;
+	}
+	if(value!="")
+		t.val(value+","+tv);
+	else
+		t.val(tv)
+}
+function ltrim(str){
+    var whitespace = new String(" \t\n\r");
+    var s = new String(str);
+    if (whitespace.indexOf(s.charAt(0)) != -1){
+        var j=0, i = s.length;
+        while (j < i && whitespace.indexOf(s.charAt(j)) != -1){
+            j++;
+        }
+        s = s.substring(j, i);
+    }
+    return s;
+}
+
+function rtrim(str){
+    var whitespace = new String(" \t\n\r");
+    var s = new String(str);
+    if (whitespace.indexOf(s.charAt(s.length-1)) != -1){
+        var i = s.length - 1;
+        while (i >= 0 && whitespace.indexOf(s.charAt(i)) != -1){
+            i--;
+        }
+        s = s.substring(0, i+1);
+    }
+    return s;
+}
+ 
+function trim(str){
+    return rtrim(ltrim(str));
+}
+</SCRIPT>
+ <EM id="p_attention_count">0</EM>人收藏此文章, <SPAN id="attention_it">
+<SCRIPT type="text/javascript">document.write(favor_add);</SCRIPT>
+ </SPAN> 
+<SCRIPT type="text/javascript">
+	$(document).ready(function(){
+    	$.ajax({
+    		url:"/action/favorite/attentionUsersCount",
+    		type:"get",
+    		data:"id="+159114+"&type="+3,
+    		success:function(msg){
+				$("#p_attention_count").html(msg);
+    		}
+    	});
+	});
+</SCRIPT>
+			</SPAN>			    	 </DIV>
+<DIV title="都有22个人赞过了，你也来赞一下吧！不会扣积分哦！" class="tvote" onclick="vote(159114)"><EM 
+class="vote">赞</EM><EM class="num vote_count">22</EM></DIV></DIV><A href="http://click.aliyun.com/m/3873/" 
+target="_blank"><IMG style="width: 730px; height: 50px;" src="Git图形化界面客户端大汇总%20-%20Amstrong的个人页面%20-%20开源中国社区_files/180158_p2it_2491310.jpg"></A>	 
+ 	  	  <A name="kindeditor"></A>	             
+<DIV class="BlogAbstracts"><EM class="corner">摘要</EM>             
+<SPAN>介绍各平台下的图形化界面git客户端（本人并没有全部使用过），欢迎大家补充新的软件或者使用感受~ 
+（注：本文是原文，还在不断更新，网上搜到的同名文章都是未经同意就从这里复制过去的）</SPAN>						            
+<DIV class="BlogTags"><A class="tag" href="http://www.oschina.net/search?scope=blog&amp;q=Git">Git</A> 
+       	        	 <A class="tag" href="http://www.oschina.net/search?scope=blog&amp;q=Github">Github</A> 
+       	        	 <A class="tag" href="http://www.oschina.net/search?scope=blog&amp;q=%E5%AE%A2%E6%88%B7%E7%AB%AF">客户端</A> 
+       	        	 <A class="tag" href="http://www.oschina.net/search?scope=blog&amp;q=GUI">GUI</A> 
+       	        	 <A class="tag" href="http://www.oschina.net/search?scope=blog&amp;q=%E7%89%88%E6%9C%AC%E6%8E%A7%E5%88%B6">版本控制</A> 
+       	            </DIV></DIV><BR>
+<DIV class="BlogAnchor">
+<P><EM title="点击收起目录" class="corner" id="AnchorContentToggle" style="cursor: pointer;">目录[-]</EM></P>
+<DIV class="AnchorContent" id="AnchorContent">
+<LI class="osc_h3"><A href="http://my.oschina.net/amstrong/blog/159114?fromerr=aeUMW8K6#OSC_h3_1">一、TortoiseGit&nbsp;- 
+The coolest Interface to Git Version Control</A></LI>
+<LI class="osc_h3"><A href="http://my.oschina.net/amstrong/blog/159114?fromerr=aeUMW8K6#OSC_h3_2">二、SourceTree&nbsp;-&nbsp;A 
+free Git &amp; Mercurial client for Windows or Mac</A></LI>
+<LI class="osc_h3"><A href="http://my.oschina.net/amstrong/blog/159114?fromerr=aeUMW8K6#OSC_h3_3">三、GitUp&nbsp;-&nbsp;Work 
+quickly, safely, and without headaches</A></LI>
+<LI class="osc_h3"><A href="http://my.oschina.net/amstrong/blog/159114?fromerr=aeUMW8K6#OSC_h3_4">四、SmartGit&nbsp;-&nbsp;Get 
+your commit done</A></LI>
+<LI class="osc_h3"><A href="http://my.oschina.net/amstrong/blog/159114?fromerr=aeUMW8K6#OSC_h3_5">五、QGit&nbsp;-&nbsp;QGit 
+is a git GUI viewer built on Qt/C++</A></LI>
+<LI class="osc_h3"><A href="http://my.oschina.net/amstrong/blog/159114?fromerr=aeUMW8K6#OSC_h3_6">六、GitX&nbsp;-&nbsp;GitX 
+is a git GUI made for Mac OS X</A></LI>
+<LI class="osc_h3"><A href="http://my.oschina.net/amstrong/blog/159114?fromerr=aeUMW8K6#OSC_h3_7">七、gitnub&nbsp;-&nbsp;Git 
+kicking it OS X style</A></LI>
+<LI class="osc_h3"><A href="http://my.oschina.net/amstrong/blog/159114?fromerr=aeUMW8K6#OSC_h3_8">八、Tower&nbsp;- 
+The most power Git client for Mac</A></LI>
+<LI class="osc_h3"><A href="http://my.oschina.net/amstrong/blog/159114?fromerr=aeUMW8K6#OSC_h3_9">九、git-cola&nbsp;-&nbsp;a 
+sleek and powerful Git GUI</A></LI>
+<LI class="osc_h3"><A href="http://my.oschina.net/amstrong/blog/159114?fromerr=aeUMW8K6#OSC_h3_10">十、Git 
+Extensions&nbsp;-&nbsp;the only graphical user interface for Git that allows you 
+control Git without using the commandline</A></LI>
+<LI class="osc_h3"><A href="http://my.oschina.net/amstrong/blog/159114?fromerr=aeUMW8K6#OSC_h3_11">十一、GitEye&nbsp;-&nbsp;Your 
+eye on all things Git</A></LI>
+<LI class="osc_h3"><A href="http://my.oschina.net/amstrong/blog/159114?fromerr=aeUMW8K6#OSC_h3_12">十二、GitBox&nbsp;- 
+Version control as easy as Mail</A></LI>
+<LI class="osc_h3"><A href="http://my.oschina.net/amstrong/blog/159114?fromerr=aeUMW8K6#OSC_h3_13">十三、Gitg&nbsp;- 
+The GNOME GUI client to view git repositories</A></LI>
+<LI class="osc_h3"><A href="http://my.oschina.net/amstrong/blog/159114?fromerr=aeUMW8K6#OSC_h3_14">十四、Giggle&nbsp;- 
+Giggle is a graphical frontend for the git content tracker</A></LI></DIV></DIV>
+<SCRIPT>
+		  	$(function(){
+				$("#AnchorContentToggle").click(function(){
+					var text = $(this).html();
+					if(text=="目录[-]"){
+						$(this).html("目录[+]");
+						$(this).attr({"title":"展开"});
+					}else{
+						$(this).html("目录[-]");
+						$(this).attr({"title":"收起"});
+					}
+					$("#AnchorContent").toggle();
+				});
+			});
+		  </SCRIPT>
+	  	  	  	           
+<DIV class="BlogContent"><SPAN id="OSC_h3_1"></SPAN> 
+<H3><SPAN></SPAN><SPAN style='font-family: "Microsoft YaHei";'>一、</SPAN><A href="https://code.google.com/p/tortoisegit/" 
+target="_blank" rel="nofollow"><SPAN 
+style='font-family: "Microsoft YaHei";'>TortoiseGit</SPAN></A><SPAN style='font-family: "Microsoft YaHei";'>&nbsp;- 
+The coolest Interface to Git Version Control</SPAN> </H3>
+<P><SPAN style='line-height: 21px; font-family: "Microsoft YaHei";'>TortoiseGit 
+是&nbsp;</SPAN><SPAN 
+style='font-family: "Microsoft YaHei";'>TortoiseSVN&nbsp;</SPAN><SPAN style='line-height: 21px; font-family: "Microsoft YaHei";'>的&nbsp;</SPAN><SPAN 
+style='font-family: "Microsoft YaHei";'>Git&nbsp;</SPAN><SPAN style="line-height: 21px; font-family: 微软雅黑, Verdana, sans-serif, 宋体; background-color: rgb(255, 255, 255);"><SPAN 
+style='font-family: "Microsoft YaHei";'>版本，</SPAN><SPAN style='line-height: 21px; font-family: "Microsoft YaHei";'>TortoiseGit&nbsp;</SPAN><SPAN 
+style='font-family: "Microsoft YaHei";'>用于迁移 TortoiseSVN 到 TortoiseGit，一直以来 Git 
+在 Windows 平台没有好用 GUI 客户端，现在 TortoiseGit 的出现给 Windows 
+开发者带来福音，目前&nbsp;</SPAN><SPAN style='line-height: 21px; font-family: "Microsoft YaHei";'>TortoiseGit&nbsp;</SPAN><SPAN 
+style='font-family: "Microsoft YaHei";'>是 <SPAN></SPAN>1.8.6.0<SPAN></SPAN> 
+版本，一个开源的项目，欢迎你的加入贡献代码。（摘自oschina）</SPAN></SPAN> </P>
+<P><SPAN><SPAN style="line-height: 21px;">另外，楼主个人感觉 TortoiseGit 用起来很方便，跟 
+TortoiseSVN 一样可以通过直接观察文件图标来查看文件当前的状态，在 Windows 
+下的表现确实没得说，所以放在第一位推荐。</SPAN></SPAN> </P>
+<P><SPAN style='line-height: 21px; font-family: "Microsoft YaHei";'>支持系统：Windows 
+&nbsp;（免费软件）</SPAN> </P>
+<P><IMG alt="" src="Git图形化界面客户端大汇总%20-%20Amstrong的个人页面%20-%20开源中国社区_files/152500_0e8U_219038.png"> 
+</P><SPAN id="OSC_h3_2"></SPAN> 
+<H3><SPAN style='font-family: "Microsoft YaHei";'>二、</SPAN><A href="http://sourcetreeapp.com/" 
+target="_blank" rel="nofollow"><SPAN 
+style='font-family: "Microsoft YaHei";'>SourceTree</SPAN></A><SPAN style='font-family: "Microsoft YaHei";'>&nbsp;-&nbsp;A 
+free Git &amp; Mercurial client for Windows or Mac</SPAN> </H3>
+<P><SPAN style='font-family: "Microsoft YaHei";'><SPAN style='line-height: 21px; font-family: "Microsoft YaHei";'>SourceTree 
+是 Windows 和 OS X 下免费的 Git 和 Hg 客户端。支持创建、克隆、提交、push、pull 
+和合并等操作。（摘自oschina）</SPAN></SPAN> </P>
+<P>SourceTree <SPAN style="font-family: Microsoft YaHei;">界面非常美观，可以方便管理多个 Git 
+项目，同时还支持 Hg，就是启动速度稍微有些慢，但是总体来说还是很不错的。</SPAN> </P>
+<P><SPAN><SPAN style='line-height: 21px; font-family: "Microsoft YaHei";'><SPAN 
+style='font-family: "Microsoft YaHei";'>支持系统：</SPAN><SPAN style='color: rgb(0, 0, 0); font-family: "Microsoft YaHei";'>Windows</SPAN></SPAN><SPAN 
+style='color: rgb(0, 0, 0); font-family: "Microsoft YaHei";'> 
+/</SPAN></SPAN><SPAN><SPAN style='line-height: 21px; font-family: "Microsoft YaHei";'><SPAN 
+style="color: rgb(0, 0, 0);"></SPAN></SPAN><SPAN style='color: rgb(0, 0, 0); font-family: "Microsoft YaHei";'>&nbsp;</SPAN></SPAN><SPAN><SPAN 
+style='line-height: 21px; font-family: "Microsoft YaHei";'></SPAN><SPAN style='font-family: "Microsoft YaHei";'></SPAN><A 
+rel="nofollow"><SPAN style='color: rgb(0, 0, 0); font-family: "Microsoft YaHei";'>OS 
+X</SPAN></A></SPAN><SPAN style='color: rgb(0, 0, 0); font-family: "Microsoft YaHei";'><SPAN 
+style='color: rgb(0, 0, 0); line-height: 22px; font-family: "Microsoft YaHei";'>&nbsp;（免费软件）</SPAN></SPAN> 
+</P>
+<P><SPAN><IMG alt="" src="Git图形化界面客户端大汇总%20-%20Amstrong的个人页面%20-%20开源中国社区_files/154003_nZyP_219038.png"><BR></SPAN> 
+</P>
+<P><SPAN></SPAN> </P><SPAN id="OSC_h3_3"></SPAN> 
+<H3><SPAN style="line-height: 21px; font-family: 微软雅黑, Verdana, sans-serif, 宋体; background-color: rgb(255, 255, 255);"><SPAN 
+style='font-family: "Microsoft YaHei";'>三、<A href="https://wiki.gnome.org/Apps/giggle/" 
+target="_blank" rel="nofollow"></A><A href="http://gitup.co/" target="_blank" 
+rel="nofollow">GitUp</A><A href="https://wiki.gnome.org/Apps/Gitg/" target="_blank" 
+rel="nofollow"></A>&nbsp;</SPAN><SPAN 
+style='font-family: "Microsoft YaHei";'>-&nbsp;Work quickly, safely, and without 
+headaches</SPAN></SPAN> </H3>
+<P> GitUp 是 Mac OS X 的全功能开源 Git 客户端，提供快速，安全的操作，直接在硬盘上与 Git 数据库交互，操作库的图而不是操作 
+commits。<SPAN 
+style='line-height: 21px; font-family: "Microsoft YaHei";'>（摘自oschina）</SPAN> 
+</P>
+<P><SPAN 
+style='line-height: 21px; font-family: "Microsoft YaHei";'>这个是最新出来的，看介绍貌似挺厉害的，可以无限地撤销和重做，而且快的离谱。不过没有亲身试验，不知道实际效果如何，希望用苹果的朋友试过以后能来点反馈。</SPAN> 
+</P>
+<P><SPAN style='line-height: 21px; font-family: "Microsoft YaHei";'><SPAN style="background-color: rgb(255, 255, 255);">支持系统：OS 
+X（免费软件）</SPAN></SPAN> </P><IMG alt="" src="Git图形化界面客户端大汇总%20-%20Amstrong的个人页面%20-%20开源中国社区_files/144400_b829_219038.png"> 
+<BR>
+<P><BR></P><SPAN id="OSC_h3_4"></SPAN> 
+<H3><SPAN style='font-family: "Microsoft YaHei";'>四、</SPAN><A href="http://www.syntevo.com/smartgithg/" 
+target="_blank" rel="nofollow"><SPAN 
+style='font-family: "Microsoft YaHei";'>SmartGit</SPAN></A><SPAN style='font-family: "Microsoft YaHei";'>&nbsp;-&nbsp;Get 
+your commit done</SPAN> </H3>
+<P><SPAN style='line-height: 21px; font-family: "Microsoft YaHei";'>SmartGit 
+是一个&nbsp;</SPAN><SPAN style='font-family: "Microsoft YaHei";'>Git</SPAN><SPAN 
+style="line-height: 21px; font-family: 微软雅黑, Verdana, sans-serif, 宋体; background-color: rgb(255, 255, 255);"><SPAN 
+style='font-family: "Microsoft YaHei";'>&nbsp;</SPAN><SPAN></SPAN><SPAN style='font-family: "Microsoft YaHei";'>版本控制系统的图形化客户端程序。</SPAN></SPAN><SPAN 
+style='line-height: 21px; font-family: "Microsoft YaHei";'>（摘自oschina）</SPAN> 
+</P>
+<P><SPAN></SPAN><SPAN></SPAN><SPAN style='line-height: 21px; font-family: "Microsoft YaHei";'>支持系统：Windows</SPAN><SPAN 
+style='font-family: "Microsoft YaHei";'> /&nbsp;</SPAN><A rel="nofollow"><SPAN 
+style='font-family: "Microsoft YaHei";'>OS X</SPAN></A><SPAN style='line-height: 22px; font-family: "Microsoft YaHei"; font-weight: bold;'>&nbsp;</SPAN><SPAN 
+style='line-height: 22px; font-family: "Microsoft YaHei";'> /</SPAN><SPAN style='font-family: "Microsoft YaHei";'> 
+Linux &nbsp;（共享软件）</SPAN> </P>
+<P><IMG alt="" src="Git图形化界面客户端大汇总%20-%20Amstrong的个人页面%20-%20开源中国社区_files/154559_wKUj_219038.png"> 
+</P><SPAN id="OSC_h3_5"></SPAN> 
+<H3><SPAN style='font-family: "Microsoft YaHei";'>五、</SPAN><A href="http://digilander.libero.it/mcostalba/" 
+target="_blank" rel="nofollow"><SPAN 
+style='font-family: "Microsoft YaHei";'>QGit</SPAN></A><SPAN style='font-family: "Microsoft YaHei";'>&nbsp;-&nbsp;QGit 
+is a git GUI viewer built on Qt/C++</SPAN> </H3>
+<P><SPAN style='font-family: "Microsoft YaHei";'>QGit 是一个基于 Qt/C++ 开发的 GIT 
+的图形化浏览器。可以用来浏览修订版记录、补丁内容以及更改的文件。</SPAN> </P>
+<P><SPAN 
+style='line-height: 21px; font-family: "Microsoft YaHei";'>支持系统：Windows</SPAN><SPAN 
+style='line-height: 22px; font-family: "Microsoft YaHei";'>&nbsp;/</SPAN><SPAN 
+style='font-family: "Microsoft YaHei";'>&nbsp;Linux &nbsp;（免费软件）</SPAN> </P>
+<P><IMG alt="" src="Git图形化界面客户端大汇总%20-%20Amstrong的个人页面%20-%20开源中国社区_files/155424_o2H0_219038.jpg"> 
+</P><SPAN id="OSC_h3_6"></SPAN> 
+<H3><SPAN style='font-family: "Microsoft YaHei";'>六、</SPAN><A href="http://gitx.frim.nl/index.html" 
+target="_blank" rel="nofollow"><SPAN 
+style='font-family: "Microsoft YaHei";'>GitX</SPAN></A><SPAN style='font-family: "Microsoft YaHei";'>&nbsp;-&nbsp;GitX 
+is a git GUI made for Mac OS X</SPAN> </H3>
+<P><SPAN><SPAN style='font-family: "Microsoft YaHei";'>GitX 是一个</SPAN><SPAN 
+style='line-height: 21px; font-family: "Microsoft YaHei";'>是一个 MacOS X 
+系统上的&nbsp;</SPAN><SPAN style='font-family: "Microsoft YaHei";'>Git</SPAN><SPAN 
+style='line-height: 21px; font-family: "Microsoft YaHei";'>&nbsp;版本控制系统的图形化客户端程序。</SPAN></SPAN> 
+</P>
+<P><SPAN style='font-family: "Microsoft YaHei";'><SPAN style='line-height: 21px; font-family: "Microsoft YaHei";'>支持系统：OS 
+X &nbsp;(免费软件）</SPAN></SPAN> </P>
+<P><SPAN><IMG alt="" src="Git图形化界面客户端大汇总%20-%20Amstrong的个人页面%20-%20开源中国社区_files/160752_KOOD_219038.png"><BR></SPAN> 
+</P><SPAN id="OSC_h3_7"></SPAN> 
+<H3><SPAN><SPAN style='font-family: "Microsoft YaHei";'>七、</SPAN><A href="https://github.com/Caged/gitnub/wiki" 
+target="_blank" rel="nofollow"><SPAN 
+style='font-family: "Microsoft YaHei";'>gitnub</SPAN></A><SPAN style='font-family: "Microsoft YaHei";'>&nbsp;-&nbsp;Git 
+kicking it OS X style</SPAN></SPAN> </H3>
+<P><SPAN><SPAN style='font-family: "Microsoft YaHei";'>gitnub 也是一个</SPAN><SPAN 
+style='line-height: 21px; font-family: "Microsoft YaHei";'>是一个 MacOS X 
+系统上的&nbsp;</SPAN><SPAN style='font-family: "Microsoft YaHei";'>Git</SPAN><SPAN 
+style='line-height: 21px; font-family: "Microsoft YaHei";'>&nbsp;版本控制系统的图形化客户端程序。</SPAN></SPAN> 
+</P>
+<P><SPAN><SPAN 
+style='line-height: 21px; font-family: "Microsoft YaHei";'>支持系统：OS X 
+&nbsp;(免费软件）</SPAN><BR></SPAN> </P>
+<P><SPAN><IMG alt="" src="Git图形化界面客户端大汇总%20-%20Amstrong的个人页面%20-%20开源中国社区_files/161621_dwQ5_219038.png"><BR></SPAN> 
+</P><SPAN id="OSC_h3_8"></SPAN> 
+<H3><SPAN><SPAN style='font-family: "Microsoft YaHei";'>八、</SPAN><A href="http://www.git-tower.com/" 
+target="_blank" rel="nofollow"><SPAN 
+style='font-family: "Microsoft YaHei";'>Tower</SPAN></A><SPAN style='font-family: "Microsoft YaHei";'>&nbsp;- 
+The most power Git client for Mac</SPAN></SPAN> </H3>
+<P><SPAN style='font-family: "Microsoft YaHei";'>Tower 号称是 Mac 下最好用的 Git 
+客户端。</SPAN> </P>
+<P><SPAN><SPAN 
+style='line-height: 21px; font-family: "Microsoft YaHei";'>支持系统：OS X 
+&nbsp;(共享软件）</SPAN><SPAN></SPAN><BR></SPAN> </P>
+<P><SPAN><IMG alt="" src="Git图形化界面客户端大汇总%20-%20Amstrong的个人页面%20-%20开源中国社区_files/162028_gfZ4_219038.jpg"><BR></SPAN> 
+</P><SPAN id="OSC_h3_9"></SPAN> 
+<H3><SPAN><SPAN style='font-family: "Microsoft YaHei";'>九、</SPAN><A href="http://git-cola.github.io/" 
+target="_blank" rel="nofollow"><SPAN 
+style='font-family: "Microsoft YaHei";'>git-cola</SPAN></A><SPAN style='font-family: "Microsoft YaHei";'>&nbsp;-&nbsp;a 
+sleek and powerful Git GUI</SPAN></SPAN> </H3>
+<P><SPAN style='font-family: "Microsoft YaHei";'>Git-cola 是一个跨平台的 Git 前端 
+(GUI)，使用 python 编写。它支持在 Linux、Windows 及 Mac OS X 等平台上运行。目前，Git-cola 包括 diff 
+(差异比较)、commit (提交)、search (搜索)、merge (合并)、stash (隐藏)、repository ops、branching 
+等功能。</SPAN> </P>
+<P><SPAN 
+style='line-height: 21px; font-family: "Microsoft YaHei";'>支持系统：Windows</SPAN><SPAN 
+style='font-family: "Microsoft YaHei";'>&nbsp;/&nbsp;</SPAN><A 
+rel="nofollow"><SPAN style='font-family: "Microsoft YaHei";'>OS 
+X</SPAN></A><SPAN style='line-height: 22px; font-family: "Microsoft YaHei"; font-weight: bold;'>&nbsp;</SPAN><SPAN 
+style='line-height: 22px; font-family: "Microsoft YaHei";'>&nbsp;/</SPAN><SPAN 
+style='font-family: "Microsoft YaHei";'>&nbsp;Linux &nbsp;（免费软件）</SPAN> </P>
+<P><IMG alt="" src="Git图形化界面客户端大汇总%20-%20Amstrong的个人页面%20-%20开源中国社区_files/162841_2Y3Z_219038.png"> 
+</P><SPAN id="OSC_h3_10"></SPAN> 
+<H3><SPAN style='font-family: "Microsoft YaHei";'>十、</SPAN><SPAN style="line-height: 21px; font-family: 微软雅黑, Verdana, sans-serif, 宋体; background-color: rgb(255, 255, 255);"><A 
+href="https://code.google.com/p/gitextensions/" target="_blank" 
+rel="nofollow"><SPAN style='font-family: "Microsoft YaHei";'>Git 
+Extensions</SPAN></A><SPAN 
+style='font-family: "Microsoft YaHei";'>&nbsp;-&nbsp;the only graphical user 
+interface for Git that allows you control Git without using the 
+commandline</SPAN></SPAN> </H3>
+<P><SPAN style='line-height: 21px; font-family: "Microsoft YaHei";'>Git 
+Extensions 是一个 Git 的图形化客户端，用来控制 Git 资料库，支持 Windows 资源管理器集成和 Visual Studio 
+集成。（摘自oschina）</SPAN> </P>
+<P><SPAN style="line-height: 21px; font-family: 微软雅黑, Verdana, sans-serif, 宋体; background-color: rgb(255, 255, 255);"><SPAN 
+style='line-height: 21px; font-family: "Microsoft YaHei";'>支持系统：Windows</SPAN><SPAN 
+style='font-family: "Microsoft YaHei";'>&nbsp;</SPAN><SPAN style='line-height: 22px; font-family: "Microsoft YaHei";'>/</SPAN><SPAN 
+style='font-family: "Microsoft YaHei";'>&nbsp;Linux 
+&nbsp;（免费软件）</SPAN><BR></SPAN> </P>
+<P><SPAN style="line-height: 21px; font-family: 微软雅黑, Verdana, sans-serif, 宋体; background-color: rgb(255, 255, 255);"><IMG 
+alt="" src="Git图形化界面客户端大汇总%20-%20Amstrong的个人页面%20-%20开源中国社区_files/164318_5hfK_219038.png"><BR></SPAN> 
+</P><SPAN id="OSC_h3_11"></SPAN> 
+<H3><SPAN style="line-height: 21px; font-family: 微软雅黑, Verdana, sans-serif, 宋体; background-color: rgb(255, 255, 255);"><SPAN 
+style='font-family: "Microsoft YaHei";'>十一、</SPAN><A href="http://www.collab.net/giteyeapp" 
+target="_blank" rel="nofollow"><SPAN 
+style='font-family: "Microsoft YaHei";'>GitEye</SPAN></A><SPAN style='font-family: "Microsoft YaHei";'>&nbsp;-&nbsp;Your 
+eye on all things Git</SPAN></SPAN> </H3>
+<P><SPAN style='line-height: 21px; font-family: "Microsoft YaHei";'>GitEye 
+是一个简单好用的 Git 客户端</SPAN> </P>
+<P><SPAN><SPAN style="line-height: 21px;">楼主在linux下试用了这款软件，感觉和 Eclipse Egit 
+基本上是一样的，单纯作为 git 客户端也还是可以的。</SPAN></SPAN> </P>
+<P><SPAN style="line-height: 21px; font-family: 微软雅黑, Verdana, sans-serif, 宋体; background-color: rgb(255, 255, 255);"><SPAN 
+style='font-family: "Microsoft YaHei";'>支持系统：Windows / OS X &nbsp;/ Linux 
+&nbsp;（免费软件）</SPAN><BR></SPAN> </P>
+<P><SPAN style="line-height: 21px; font-family: 微软雅黑, Verdana, sans-serif, 宋体; background-color: rgb(255, 255, 255);"><IMG 
+alt="" src="Git图形化界面客户端大汇总%20-%20Amstrong的个人页面%20-%20开源中国社区_files/165637_hByO_219038.png"><BR></SPAN> 
+</P><SPAN id="OSC_h3_12"></SPAN> 
+<H3><SPAN style="line-height: 21px; font-family: 微软雅黑, Verdana, sans-serif, 宋体; background-color: rgb(255, 255, 255);"><SPAN 
+style='font-family: "Microsoft YaHei";'>十二、</SPAN><SPAN></SPAN><A href="http://gitboxapp.com/" 
+target="_blank" rel="nofollow"><SPAN 
+style='font-family: "Microsoft YaHei";'>GitBox</SPAN></A><SPAN style='font-family: "Microsoft YaHei";'>&nbsp;- 
+Version control as easy as Mail</SPAN></SPAN> </H3>
+<P><SPAN style='line-height: 21px; font-family: "Microsoft YaHei";'>GitBox 
+是一个功能齐全的 Git 客户端。</SPAN> </P>
+<P><SPAN style="line-height: 21px; font-family: 微软雅黑, Verdana, sans-serif, 宋体; background-color: rgb(255, 255, 255);"><SPAN 
+style='line-height: 21px; font-family: "Microsoft YaHei";'>支持系统：OS X 
+&nbsp;（收费软件）</SPAN><BR></SPAN> </P>
+<P><SPAN style="line-height: 21px; font-family: 微软雅黑, Verdana, sans-serif, 宋体; background-color: rgb(255, 255, 255);"><IMG 
+alt="" src="Git图形化界面客户端大汇总%20-%20Amstrong的个人页面%20-%20开源中国社区_files/170059_VBYI_219038.jpg"><BR></SPAN> 
+</P>
+<P><SPAN style="line-height: 21px; font-family: 微软雅黑, Verdana, sans-serif, 宋体; background-color: rgb(255, 255, 255);"></SPAN> 
+</P><SPAN id="OSC_h3_13"></SPAN> 
+<H3><SPAN style="line-height: 21px; font-family: 微软雅黑, Verdana, sans-serif, 宋体; background-color: rgb(255, 255, 255);"><SPAN 
+style='font-family: "Microsoft YaHei";'>十三、<A href="https://wiki.gnome.org/Apps/Gitg/" 
+target="_blank" rel="nofollow">Gitg</A>&nbsp;</SPAN><SPAN style='font-family: "Microsoft YaHei";'>- 
+The GNOME GUI client to view git repositories</SPAN></SPAN> </H3>
+<P> gitg 是一个用于查看 Git 版本控制系统的工具。新版本使用 gtk3 的新界面。<SPAN style='line-height: 21px; font-family: "Microsoft YaHei";'>（摘自oschina）</SPAN> 
+</P>
+<P><SPAN style='line-height: 21px; font-family: "Microsoft YaHei";'><SPAN style='line-height: 21px; font-family: "Microsoft YaHei"; background-color: rgb(255, 255, 255);'>支持系统：Linux 
+&nbsp;（免费软件）</SPAN><BR></SPAN> </P>
+<P><SPAN style='line-height: 21px; font-family: "Microsoft YaHei";'><IMG alt="" 
+src="Git图形化界面客户端大汇总%20-%20Amstrong的个人页面%20-%20开源中国社区_files/201059_2vfp_219038.png"><BR></SPAN> 
+</P>
+<P><SPAN style='line-height: 21px; font-family: "Microsoft YaHei";'></SPAN> 
+</P><SPAN id="OSC_h3_14"></SPAN> 
+<H3><SPAN style="line-height: 21px; font-family: 微软雅黑, Verdana, sans-serif, 宋体; background-color: rgb(255, 255, 255);"><SPAN 
+style='font-family: "Microsoft YaHei";'>十四、<SPAN></SPAN><A href="https://wiki.gnome.org/Apps/giggle/" 
+target="_blank" rel="nofollow">Giggle</A><A href="https://wiki.gnome.org/Apps/Gitg/" 
+target="_blank" rel="nofollow"><SPAN></SPAN></A>&nbsp;</SPAN><SPAN style='font-family: "Microsoft YaHei";'>- 
+Giggle is a graphical frontend for the git content tracker</SPAN></SPAN> </H3>
+<P> Giggle 是一个图形化的 Git 目录跟踪监控的软件。<SPAN style='line-height: 21px; font-family: "Microsoft YaHei";'>（摘自oschina）</SPAN> 
+</P>
+<P><SPAN style='line-height: 21px; font-family: "Microsoft YaHei";'><SPAN style="background-color: rgb(255, 255, 255);">支持系统：Linux 
+&nbsp;（免费软件）</SPAN></SPAN> </P>
+<P><IMG alt="" src="Git图形化界面客户端大汇总%20-%20Amstrong的个人页面%20-%20开源中国社区_files/201442_eJvO_219038.png"> 
+</P>
+<H3></H3>
+<P><SPAN 
+style='line-height: 1.5; font-family: "Microsoft YaHei";'>除此之外，</SPAN><SPAN 
+style='font-family: "Microsoft YaHei";'><A href="https://git-for-windows.github.io/" 
+target="_blank" rel="nofollow">msysgit</A></SPAN><SPAN style='line-height: 1.5; font-family: "Microsoft YaHei";'>&nbsp;自带的 
+Git Gui 虽然简陋，但也还是可以用的。</SPAN> </P>
+<P><SPAN><SPAN style='font-family: "Microsoft YaHei";'>Github 官网也发布了定制的 
+</SPAN><A href="http://windows.github.com/" target="_blank" rel="nofollow"><SPAN 
+style='font-family: "Microsoft YaHei";'>Github for Windows</SPAN></A><SPAN 
+style='font-family: "Microsoft YaHei";'> 和&nbsp;</SPAN><SPAN><A href="http://mac.github.com/" 
+target="_blank" rel="nofollow"><SPAN 
+style='font-family: "Microsoft YaHei";'>Github for Mac</SPAN></A><SPAN style='font-family: "Microsoft YaHei";'>，界面非常漂亮，但是由于不是单纯的 
+git 工具，所以这里就不介绍了，大家可以上官网查看。</SPAN></SPAN></SPAN> </P>
+<P><SPAN style='font-family: "Microsoft YaHei";'>最后吐槽一下，为什么这么多都只支持 OS 
+X，穷人买不起苹果啊！</SPAN> </P>
+<P><SPAN style='font-family: "Microsoft YaHei";'>（转载请注明出处&nbsp;<A href="http://my.oschina.net/amstrong/blog/159114" 
+target="_blank" 
+rel="nofollow">http://my.oschina.net/amstrong/blog/159114</A>）</SPAN><SPAN></SPAN> 
+</P>
+<P><SPAN><SPAN></SPAN></SPAN> </P><SPAN></SPAN></DIV>
+<DIV class="BlogShare"><STRONG>分享到：</STRONG>		 <A title="分享到新浪微博" class="share_sina" 
+href="javascript:void((function(s,d,e,r,l,p,t,z,c){var%20f='http://v.t.sina.com.cn/share/share.php?appkey=858381728',u=z||d.location,p=['&amp;url=',e(u),'&amp;title=',e(t||d.title),'&amp;source=',e(r),'&amp;sourceUrl=',e(l),'&amp;content=',c||'gb2312','&amp;pic=',e(p||'')].join('');function%20a(){if(!window.open([f,p].join(''),'mb',['toolbar=0,status=0,resizable=1,width=440,height=430,left=',(s.width-440)/2,',top=',(s.height-430)/2].join('')))u.href=[f,p].join('');};if(/Firefox/.test(navigator.userAgent))setTimeout(a,0);else%20a();})(screen,document,encodeURIComponent,'','','','Git图形化界面客户端大汇总: 一、TortoiseGit&nbsp;- The coolest Interface to Git Version Control TortoiseGit 是&nbsp;TortoiseSVN&nbsp;的&nbsp;Git&nbsp;版本，TortoiseGit&nbsp;用于迁移 TortoiseSVN 到 TortoiseGit，...','','utf-8'));"><IMG 
+height="29" src="Git图形化界面客户端大汇总%20-%20Amstrong的个人页面%20-%20开源中国社区_files/sinaweibo_fb1.png">
+		 </A>		 <A title="分享到腾讯微博" class="share_qq" href="javascript:(function(){window.open('http://v.t.qq.com/share/share.php?url='+encodeURIComponent(document.location)+'&amp;appkey=96f54f97c4de46e393c4835a266207f4&amp;site=&amp;title='+encodeURIComponent(document.title)+encodeURIComponent(': 一、TortoiseGit&nbsp;- The coolest Interface to Git Version Control TortoiseGit 是&nbsp;TortoiseSVN&nbsp;的&nbsp;Git&nbsp;版本，TortoiseGit&nbsp;用于迁移 TortoiseSVN 到 TortoiseGit，...'),'', 'width=450, height=400, top=0, left=0, toolbar=no, menubar=no, scrollbars=no, location=yes, resizable=no, status=no');}())"><IMG 
+height="30" src="Git图形化界面客户端大汇总%20-%20Amstrong的个人页面%20-%20开源中国社区_files/tencent_weibo_fb.jpg">
+		 </A>    	 <SPAN title="都有22个人赞过了，你也来赞一下吧！不会扣积分哦！" class="BlogVote" onclick="vote(159114)"><SPAN 
+class="num vote_count">22</SPAN><SPAN class="vote">赞</SPAN>		 </SPAN>	 </DIV>
+<DIV class="BlogCopyright">	  		声明：OSCHINA 博客文章版权属于作者，受法律保护。未经作者同意不得转载。	  	   
+</DIV>
+<DIV class="BlogLinks">
+<UL>
+  <LI class="prev"><A title="上一篇：初用github遇到的问题" href="http://my.oschina.net/amstrong/blog/135083">« 
+  上一篇</A></LI>
+  <LI class="next"><A title="下一篇：GDB基本命令(整合)" href="http://my.oschina.net/amstrong/blog/164243">下一篇 
+  »</A></LI></UL></DIV></DIV>
+<DIV style="margin: 10px 0px;">
+<SCRIPT src="http://www.oschina.net/ads/blog" type="text/javascript"></SCRIPT>
+       </DIV></DIV>
+<DIV class="recruitment recruitment-blog" style="height: 200px; margin-top: 20px;">
+<DIV class="recruit-heading">
+<DIV class="title">最新热门职位		 </DIV>
+<DIV class="more">			更多开发者职位上			 <A class="link" href="http://job.oschina.net/" 
+target="_blank">开源中国·招聘</A>		 </DIV></DIV>
+<DIV class="recruit-body">
+<UL>
+  <LI>
+  <DIV class="logo-img"><A href="http://job.oschina.net/position/10284_2642722_23823" 
+  target="_blank"><IMG src="Git图形化界面客户端大汇总%20-%20Amstrong的个人页面%20-%20开源中国社区_files/18155154_a9nh2642722.png">
+  										 </A>				 </DIV>
+  <DIV class="info-list">
+  <DIV><A href="http://job.oschina.net/position/10284_2642722_23823" target="_blank">Android 
+  开发工程师... </A>						 <A href="http://job.oschina.net/company/2642722_10284" 
+  target="_blank"><SMALL>聚鹏科技 </SMALL>						 </A>					 </DIV>
+  <H5>						月薪：						 <SPAN class="font-red">10-20K</SPAN>					 </H5></DIV></LI>
+  <LI>
+  <DIV class="logo-img"><A href="http://job.oschina.net/position/10061_2598014_22813" 
+  target="_blank"><IMG src="Git图形化界面客户端大汇总%20-%20Amstrong的个人页面%20-%20开源中国社区_files/28173421_nmvk2598014.png">
+  										 </A>				 </DIV>
+  <DIV class="info-list">
+  <DIV><A href="http://job.oschina.net/position/10061_2598014_22813" target="_blank">运维开发工程师（AWS) 
+  </A>						 <A href="http://job.oschina.net/company/2598014_10061" target="_blank"><SMALL>杏树林 
+  </SMALL>						 </A>					 </DIV>
+  <H5>						月薪：						 <SPAN class="font-red">15-30K</SPAN>					 </H5></DIV></LI>
+  <LI>
+  <DIV class="logo-img"><A href="http://job.oschina.net/position/9085_2457992_20016" 
+  target="_blank"><SPAN>执 </SPAN></A>				 </DIV>
+  <DIV class="info-list">
+  <DIV><A href="http://job.oschina.net/position/9085_2457992_20016" target="_blank">Java开发工程师 
+  </A>						 <A href="http://job.oschina.net/company/2457992_9085" target="_blank"><SMALL>执御 
+  </SMALL>						 </A>					 </DIV>
+  <H5>						月薪：						 <SPAN class="font-red">15-19K</SPAN>					 </H5></DIV></LI>
+  <LI>
+  <DIV class="logo-img"><A href="http://job.oschina.net/position/10133_2285144_23070" 
+  target="_blank"><IMG src="Git图形化界面客户端大汇总%20-%20Amstrong的个人页面%20-%20开源中国社区_files/13095147_7nqq2285144.png">
+  										 </A>				 </DIV>
+  <DIV class="info-list">
+  <DIV><A href="http://job.oschina.net/position/10133_2285144_23070" target="_blank">	Java高级开发工程师 
+  </A>						 <A href="http://job.oschina.net/company/2285144_10133" target="_blank"><SMALL>思源互联科技 
+  </SMALL>						 </A>					 </DIV>
+  <H5>						月薪：						 <SPAN class="font-red">15-25K</SPAN>
+					 </H5></DIV></LI></UL></DIV>
+<DIV class="clear"></DIV></DIV>
+<STYLE>
+	/*招聘广告位--样式*/
+	.clear{
+		clear:both;
+		font-size:1px;
+		line-height: 0;
+	}
+	.recruitment{
+		font-size: 14px;
+		border:1px solid #eee;
+		color: #333;
+		margin: 20px 0 0 230px;
+		border: 1px solid #eee;
+		background: #fff;
+		word-wrap: break-word;
+	}
+	.recruitment a{
+			text-decoration: none;
+			color: #333;
+		}
+		.recruitment a:hover{
+			text-decoration: none;
+			color: #459120;
+		}
+		.recruitment ul,.recruitment li{
+			list-style-type: none;
+			padding:0;
+			margin:0;
+		}
+		.recruitment h5{
+			font-weight: 400;
+			font-size: 12px;
+			color: #999;
+			margin:0;
+		}
+		.recruitment .recruit-heading{
+			height: 34px;
+			line-height: 34px;
+			border-bottom:1px solid #ddd;
+			margin-bottom: 10px;
+		}
+		.recruitment .recruit-heading .title{
+			float:left;
+		}
+		.recruitment .recruit-heading .more{
+			float:right;
+		}
+		.recruitment .recruit-heading .link{
+			font-size: 12px;
+			font-weight: bold;
+		}
+		.recruitment .recruit-body{
+		}
+		.recruitment .recruit-body li{
+			outline: 0;
+			padding:10px 0;
+			width: 50%;
+			/*width: -webkit-calc(50% - 4px);
+			width: -moz-calc(50% - 4px);
+			width: calc(50% - 4px);
+			display:inline-block;*/
+			height: 50px;
+			margin:0;
+			float: left;
+		}
+		.recruitment .recruit-body li .logo-img{
+			float: left;
+			width: 44px;
+			height: 44px;
+			display: inline-block;
+			padding: 2px;
+			border:1px solid #ccc;
+		}
+		.recruitment .recruit-body li .logo-img img{
+			width: 44px;
+			height: 44px;
+		}
+		.recruitment .recruit-body li .logo-img span{
+			display: block;
+			font-weight: 700;
+			height: 44px;
+			line-height: 44px;
+			font-size: 20px;
+			text-align: center;
+			border-radius: 5px;
+		}
+		.recruitment .recruit-body li .info-list{
+			margin-left:60px;
+		}
+		.recruitment .recruit-body li .info-list div{
+			line-height: 30px;
+		}
+		.recruitment .recruit-body li .info-list div a{
+			margin-right:10px;
+		}
+		.recruitment .recruit-body li .info-list small{
+			color: #666;
+		}
+		.recruitment .font-red{
+			color: #EB6000 !important;
+		}
+		.recruitment-blog{
+			margin-top:20px;
+			border:1px solid #eee;
+		}
+		.recruitment-blog .recruit-heading{
+			padding-top:10px;
+			margin-left:20px;
+			margin-right:20px;
+		}
+		.recruitment-blog .recruit-heading .title{
+			font-size:16px;
+		}
+		.recruitment-blog .recruit-body{
+			margin:0 20px;
+		}
+</STYLE>
+ <!--------------------------------------------------------> 
+<SCRIPT type="text/javascript">
+    angular.module('blogComment', ['ngSanitize'])
+	.directive('onFinishRender',function($timeout){
+       return{
+           restrict : 'A',
+		   link:function(scope,element,attr){
+               if(scope.$last){
+				   $timeout(function(){
+                       scope.$emit('ngRepeatFinished');
+				   });
+               }
+		   }
+       }
+    })
+    .controller('ListComment',function($scope, $http,$filter){
+        var url = "/action/blog/listComment?blog=159114&page=1&size=10";
+            $http({method: 'GET', url: url}).success(function(data) {
+				$scope.commentjsons = data;
+			});
+            $scope.totalComment = 10;
+            $scope.currentPage=1;
+            $scope.pageSize=10;
+            $scope.totalPage=Math.ceil($scope.totalComment/$scope.pageSize);
+            if($scope.currentPage>3){
+            	$scope.beginIndex = $scope.currentPage - 3;
+            }else{
+            	$scope.beginIndex = 1;
+            }
+            $scope.endIndex = $scope.beginIndex + 9;
+            if($scope.endIndex>$scope.totalPage){
+            	$scope.endIndex = $scope.totalPage;
+            }
+			var pages = new Array();
+			var index=0;
+			for(var i=$scope.beginIndex;i<=$scope.endIndex;i++){
+				pages[index]=i;
+				index++;
+			}
+			$scope.pages = pages;
+            $scope.delete_c = function(nid,uid,cid){
+                delete_c(nid,uid,cid);
+            };
+                $scope.ReplyInline = function(blog,user,relpy){
+            ReplyInline(blog,user,relpy);
+            };
+
+            $scope.$on('ngRepeatFinished',function(ngRepeatFinishedEvent){
+                var whref = window.location.href;
+                if(whref && whref.indexOf('#')>0){
+                    var goto = whref.substring(whref.indexOf('#'),whref.length);
+                    if(goto && goto !== whref){window.location=goto;}
+                }
+            })
+	});
+</SCRIPT>
+ 
+<DIV class="SpaceList" style="margin-top: 20px;" ng-cloak="" ng-controller="ListComment" 
+ng-app="blogComment">
+<DIV class="BlogComments">
+<H2><A name="comments"></A>评论<EM ng-bind="totalComment"></EM></H2>
+<UL id="BlogComments">
+  <LI id="cmt_{{commentjson.blogId}}_{{commentjson.userId}}_{{commentjson.commentId}}" 
+  on-finish-render="ngRepeatFinished" ng-class="{'even': {{($index+1)%2}} == 0}" 
+  ng-repeat="commentjson in commentjsons">
+  <TABLE class="ostable">
+    <TBODY>
+    <TR>
+      <TD class="portrait"><A target="_blank" ng-href="http://my.oschina.net/u/{{commentjson.userId}}"><IMG 
+        title="{{ commentjson.userName }}" align="absmiddle" class="SmallPortrait" 
+        user="{{ commentjson.userId }}" ng-src="{{commentjson.portrait}}">       
+                  </A>             </TD>
+      <TD class="body">
+        <DIV class="title"><SPAN 
+        ng-bind="(currentPage-1)*pageSize+$index+1"></SPAN>楼：<A name="{{ commentjson.blogId }}" 
+        class="user" target="_blank" ng-bind="commentjson.userName" ng-href="http://my.oschina.net/u/{{commentjson.userId}}"></A> 
+                            <SPAN ng-if="(commentjson.client_type>10000 &amp;&amp; commentjson.appApproved)">(<A 
+        title="{{commentjson.appTitle}} - {{commentjson.appDescription}}" href="http://my.oschina.net/amstrong/blog/%7B%7Bcommentjson.appUrl%7D%7D" 
+        target="_blank" ng-bind="commentjson.appTitle"></A>)</SPAN>				 <SPAN 
+        ng-switch="{{commentjson.client_type}}"><SPAN ng-if="(commentjson.client_type==2)" 
+        "="">手机</SPAN>                     <SPAN ng-if="(commentjson.client_type==3)" 
+        "="">Android</SPAN>                     <SPAN ng-if="(commentjson.client_type==4)" 
+        "="">iPhone</SPAN>                     <SPAN ng-if="(commentjson.client_type==5)" 
+        "="">Windows Phone</SPAN>                     <SPAN ng-if="(commentjson.client_type==6)" 
+        "="">微信</SPAN>                     </SPAN>                    发表于 <SPAN 
+        ng-bind="commentjson.create_time"></SPAN>                     <A href="http://my.oschina.net/amstrong/blog/" 
+        ng-if="commentjson.canAdmin" ng-click="delete_c(commentjson.blogId, commentjson.userId, commentjson.commentId)">删除</A> 
+                            <A name="rpl_{{commentjson.commentId}}" href="javascript:;" 
+        target="_self" ng-if="commentjson.canCommit" ng-click="ReplyInline(commentjson.blogId, commentjson.userId, commentjson.commentId)">回复此评论</A> 
+                        </DIV>
+        <DIV class="post" ng-bind-html="commentjson.content"></DIV>
+        <DIV class="inline_reply" id="inline_reply_of_{{commentjson.blogId}}_{{commentjson.userId}}_{{commentjson.commentId}}"></DIV></TD></TR></TBODY></TABLE></LI></UL></DIV>
+<UL class="pager">
+  <LI class="page prev" ng-if="(currentPage>1)"><A href="http://my.oschina.net/amstrong/blog/159114?p={{currentPage-1}}#comments">&lt;</A></LI>
+  <LI class="page" ng-if="(beginIndex>1)"><A href="http://my.oschina.net/amstrong/blog/159114?p=1#comments">1</A></LI>
+  <LI class="page" ng-class="{current:{{currentPage==page}}}" ng-repeat="page in pages" 
+  ng-if="totalPage>1"><A href="http://my.oschina.net/amstrong/blog/159114?p={{page}}#comments" 
+  ng-bind="page"></A></LI>
+  <LI class="page" ng-if="(endIndex<totalPage)"><A href="http://my.oschina.net/amstrong/blog/159114?p={{totalPage}}#comments" 
+  ng-bind="(totalPage)"></A></LI>
+  <LI class="page next" ng-if="(currentPage<totalPage)"><A href="http://my.oschina.net/amstrong/blog/159114?p={{currentPage+1}}#comments">&gt;</A></LI></UL></DIV><!--------------------------------------------------------> 
+<DIV id="inline_reply_editor" style="display: none;">
+<DIV class="BlogCommentForm">
+<FORM id="form_inline_comment" action="/action/blog/add_comment?blog=159114" 
+method="POST"><INPUT name="reply_id" id="inline_reply_id" type="hidden">       
+<TEXTAREA name="content" id="ccom_content" style="width: 650px; height: 60px;" onkeydown="if((event.metaKey || event.ctrlKey)&amp;&amp;event.keyCode==13){$('#form_inline_comment').submit();}"></TEXTAREA><BR>
+<P><SPAN style="float: right;"><INPUT class="blg_submit_btn" id="btn_close_inline_reply" style="background: rgba(255, 255, 255, 0); color: rgb(85, 85, 85);" type="button" value="关闭"> 
+   	   <INPUT class="blg_submit_btn" id="btn_comment" type="submit" value="回复"> 
+		  </SPAN>		   插入：				 <A class="blog_emotion" onclick="javascript:insert_emotions('ccom_content',this);" 
+href="javascript:;">表情</A>				 <A class="blog_soft" href="javascript:insert_projects_c();">开源软件</A>
+		  <SPAN class="NoData" id="ficmp_msg" style="color: rgb(255, 0, 0);"></SPAN>	  
+ </P></FORM></DIV></DIV>
+<DIV class="SpaceList" style="margin-top: 20px;"><A name="comments" id="postform"></A> 
+      
+<DIV class="BlogCommentForm">
+<FORM id="form_comment" action="/action/blog/add_comment?blog=159114" method="POST">
+<DIV class="comment_portrait"><IMG title="Amstrong" align="absmiddle" class="LargePortrait" 
+alt="Amstrong" src="Git图形化界面客户端大汇总%20-%20Amstrong的个人页面%20-%20开源中国社区_files/portrait.gif"> 
+       	</DIV>
+<DIV class="comment_form"><TEXTAREA name="content" id="wmd-input" style="width: 650px; height: 80px;" placeholder=""></TEXTAREA>
+				 
+<P><BUTTON class="blg_submit_btn" style="float: right;" 
+type="submit">发表评论</BUTTON>					 插入：					 <A class="blog_emotion" href="javascript:insert_emotions();">表情</A>
+					 <A class="blog_soft" href="javascript:insert_projects();">开源软件</A>
+					 <SPAN class="NoData" id="cmt_tip"></SPAN>				 </P>
+<DIV id="TweetFormPopupWraper">
+<DIV id="TweetFormPopupArrow">
+<DIV id="TweetFormPopup">
+<DIV id="TweetEmotions">
+<DIV class="TweetPopupTitle"><A onclick="$('#TweetFormPopupWraper').hide();return false;" 
+href="javascript:;">关闭</A>插入表情</DIV><A class="emotion" style="background-position: 0px 0px;" 
+onclick="return ins_e(0);" href="javascript:;"></A>                            	 
+                           	 <A class="emotion" style="background-position: -24px 0px;" 
+onclick="return ins_e(1);" href="javascript:;"></A>                            	 
+                           	 <A class="emotion" style="background-position: -48px 0px;" 
+onclick="return ins_e(2);" href="javascript:;"></A>                            	 
+                           	 <A class="emotion" style="background-position: -72px 0px;" 
+onclick="return ins_e(3);" href="javascript:;"></A>                            	 
+                           	 <A class="emotion" style="background-position: -96px 0px;" 
+onclick="return ins_e(4);" href="javascript:;"></A>                            	 
+                           	 <A class="emotion" style="background-position: -120px 0px;" 
+onclick="return ins_e(5);" href="javascript:;"></A>                            	 
+                           	 <A class="emotion" style="background-position: -144px 0px;" 
+onclick="return ins_e(6);" href="javascript:;"></A>                            	 
+                           	 <A class="emotion" style="background-position: -168px 0px;" 
+onclick="return ins_e(7);" href="javascript:;"></A>                            	 
+                           	 <A class="emotion" style="background-position: -192px 0px;" 
+onclick="return ins_e(8);" href="javascript:;"></A>                            	 
+                           	 <A class="emotion" style="background-position: -216px 0px;" 
+onclick="return ins_e(9);" href="javascript:;"></A>                            	 
+                           	 <A class="emotion" style="background-position: -240px 0px;" 
+onclick="return ins_e(10);" href="javascript:;"></A>                            
+	                            	 <A class="emotion" style="background-position: -264px 0px;" 
+onclick="return ins_e(11);" href="javascript:;"></A>                            
+	                            	 <A class="emotion" style="background-position: -288px 0px;" 
+onclick="return ins_e(12);" href="javascript:;"></A>                            
+	                            	 <A class="emotion" style="background-position: -312px 0px;" 
+onclick="return ins_e(13);" href="javascript:;"></A>                            
+	                            	 <A class="emotion" style="background-position: -336px 0px;" 
+onclick="return ins_e(14);" href="javascript:;"></A>                            
+	                            	 <A class="emotion" style="background-position: -360px 0px;" 
+onclick="return ins_e(15);" href="javascript:;"></A>                            
+	                            	 <A class="emotion" style="background-position: -384px 0px;" 
+onclick="return ins_e(16);" href="javascript:;"></A>                            
+	                            	 <A class="emotion" style="background-position: -408px 0px;" 
+onclick="return ins_e(17);" href="javascript:;"></A>                            
+	                            	 <A class="emotion" style="background-position: -432px 0px;" 
+onclick="return ins_e(18);" href="javascript:;"></A>                            
+	                            	 <A class="emotion" style="background-position: -456px 0px;" 
+onclick="return ins_e(19);" href="javascript:;"></A>                            
+	                            	 <A class="emotion" style="background-position: -480px 0px;" 
+onclick="return ins_e(20);" href="javascript:;"></A>                            
+	                            	 <A class="emotion" style="background-position: -504px 0px;" 
+onclick="return ins_e(21);" href="javascript:;"></A>                            
+	                            	 <A class="emotion" style="background-position: -528px 0px;" 
+onclick="return ins_e(22);" href="javascript:;"></A>                            
+	                            	 <A class="emotion" style="background-position: -552px 0px;" 
+onclick="return ins_e(23);" href="javascript:;"></A>                            
+	                            	 <A class="emotion" style="background-position: -576px 0px;" 
+onclick="return ins_e(24);" href="javascript:;"></A>                            
+	                            	 <A class="emotion" style="background-position: -600px 0px;" 
+onclick="return ins_e(25);" href="javascript:;"></A>                            
+	                            	 <A class="emotion" style="background-position: -624px 0px;" 
+onclick="return ins_e(26);" href="javascript:;"></A>                            
+	                            	 <A class="emotion" style="background-position: -648px 0px;" 
+onclick="return ins_e(27);" href="javascript:;"></A>                            
+	                            	 <A class="emotion" style="background-position: -672px 0px;" 
+onclick="return ins_e(28);" href="javascript:;"></A>                            
+	                            	 <A class="emotion" style="background-position: -696px 0px;" 
+onclick="return ins_e(29);" href="javascript:;"></A>                            
+	                            	 <A class="emotion" style="background-position: -720px 0px;" 
+onclick="return ins_e(30);" href="javascript:;"></A>                            
+	                            	 <A class="emotion" style="background-position: -744px 0px;" 
+onclick="return ins_e(31);" href="javascript:;"></A>                            
+	                            	 <A class="emotion" style="background-position: -768px 0px;" 
+onclick="return ins_e(32);" href="javascript:;"></A>                            
+	                            	 <A class="emotion" style="background-position: -792px 0px;" 
+onclick="return ins_e(33);" href="javascript:;"></A>                            
+	                            	 <A class="emotion" style="background-position: -816px 0px;" 
+onclick="return ins_e(34);" href="javascript:;"></A>                            
+	                            	 <A class="emotion" style="background-position: -840px 0px;" 
+onclick="return ins_e(35);" href="javascript:;"></A>                            
+	                            	 <A class="emotion" style="background-position: -864px 0px;" 
+onclick="return ins_e(36);" href="javascript:;"></A>                            
+	                            	 <A class="emotion" style="background-position: -888px 0px;" 
+onclick="return ins_e(37);" href="javascript:;"></A>                            
+	                            	 <A class="emotion" style="background-position: -912px 0px;" 
+onclick="return ins_e(38);" href="javascript:;"></A>                            
+	                            	 <A class="emotion" style="background-position: -936px 0px;" 
+onclick="return ins_e(39);" href="javascript:;"></A>                            
+	                            	 <A class="emotion" style="background-position: -960px 0px;" 
+onclick="return ins_e(40);" href="javascript:;"></A>                            
+	                            	 <A class="emotion" style="background-position: -984px 0px;" 
+onclick="return ins_e(41);" href="javascript:;"></A>                            
+	                            	 <A class="emotion" style="background-position: -1008px 0px;" 
+onclick="return ins_e(42);" href="javascript:;"></A>                            
+	                            	 <A class="emotion" style="background-position: -1032px 0px;" 
+onclick="return ins_e(43);" href="javascript:;"></A>                            
+	                            	 <A class="emotion" style="background-position: -1056px 0px;" 
+onclick="return ins_e(44);" href="javascript:;"></A>                            
+	                            	 <A class="emotion" style="background-position: -1080px 0px;" 
+onclick="return ins_e(45);" href="javascript:;"></A>                            
+	                            	 <A class="emotion" style="background-position: -1104px 0px;" 
+onclick="return ins_e(46);" href="javascript:;"></A>                            
+	                            	 <A class="emotion" style="background-position: -1128px 0px;" 
+onclick="return ins_e(47);" href="javascript:;"></A>                            
+	                            	 <A class="emotion" style="background-position: -1152px 0px;" 
+onclick="return ins_e(48);" href="javascript:;"></A>                            
+	                            	 <A class="emotion" style="background-position: -1176px 0px;" 
+onclick="return ins_e(49);" href="javascript:;"></A>                            
+	                            	 <A class="emotion" style="background-position: -1200px 0px;" 
+onclick="return ins_e(50);" href="javascript:;"></A>                            
+	                            	 <A class="emotion" style="background-position: -1224px 0px;" 
+onclick="return ins_e(51);" href="javascript:;"></A>                            
+	                            	 <A class="emotion" style="background-position: -1248px 0px;" 
+onclick="return ins_e(52);" href="javascript:;"></A>                            
+	                            	 <A class="emotion" style="background-position: -1272px 0px;" 
+onclick="return ins_e(53);" href="javascript:;"></A>                            
+	                            	 <A class="emotion" style="background-position: -1296px 0px;" 
+onclick="return ins_e(54);" href="javascript:;"></A>                            
+	                            	 <A class="emotion" style="background-position: -1320px 0px;" 
+onclick="return ins_e(55);" href="javascript:;"></A>                            
+	                            	 <A class="emotion" style="background-position: -1344px 0px;" 
+onclick="return ins_e(56);" href="javascript:;"></A>                            
+	                            	 <A class="emotion" style="background-position: -1368px 0px;" 
+onclick="return ins_e(57);" href="javascript:;"></A>                            
+	                            	 <A class="emotion" style="background-position: -1392px 0px;" 
+onclick="return ins_e(58);" href="javascript:;"></A>                            
+	                            	 <A class="emotion" style="background-position: -1416px 0px;" 
+onclick="return ins_e(59);" href="javascript:;"></A>                            
+	                            	 <A class="emotion" style="background-position: -1440px 0px;" 
+onclick="return ins_e(60);" href="javascript:;"></A>                            
+	                            	 <A class="emotion" style="background-position: -1464px 0px;" 
+onclick="return ins_e(61);" href="javascript:;"></A>                            
+	                            	 <A class="emotion" style="background-position: -1488px 0px;" 
+onclick="return ins_e(62);" href="javascript:;"></A>                            
+	                            	 <A class="emotion" style="background-position: -1512px 0px;" 
+onclick="return ins_e(63);" href="javascript:;"></A>                            
+	                            	 <A class="emotion" style="background-position: -1536px 0px;" 
+onclick="return ins_e(64);" href="javascript:;"></A>                            
+	                            	 <A class="emotion" style="background-position: -1560px 0px;" 
+onclick="return ins_e(65);" href="javascript:;"></A>                            
+	                            	 <A class="emotion" style="background-position: -1584px 0px;" 
+onclick="return ins_e(66);" href="javascript:;"></A>                            
+	                            	 <A class="emotion" style="background-position: -1608px 0px;" 
+onclick="return ins_e(67);" href="javascript:;"></A>                            
+	                            	 <A class="emotion" style="background-position: -1632px 0px;" 
+onclick="return ins_e(68);" href="javascript:;"></A>                            
+	                            	 <A class="emotion" style="background-position: -1656px 0px;" 
+onclick="return ins_e(69);" href="javascript:;"></A>                            
+	                            	 <A class="emotion" style="background-position: -1680px 0px;" 
+onclick="return ins_e(70);" href="javascript:;"></A>                            
+	                            	 <A class="emotion" style="background-position: -1704px 0px;" 
+onclick="return ins_e(71);" href="javascript:;"></A>                            
+	                            	 <A class="emotion" style="background-position: -1728px 0px;" 
+onclick="return ins_e(72);" href="javascript:;"></A>                            
+	                            	 <A class="emotion" style="background-position: -1752px 0px;" 
+onclick="return ins_e(73);" href="javascript:;"></A>                            
+	                            	 <A class="emotion" style="background-position: -1776px 0px;" 
+onclick="return ins_e(74);" href="javascript:;"></A>                            
+	                            	 <A class="emotion" style="background-position: -1800px 0px;" 
+onclick="return ins_e(75);" href="javascript:;"></A>                            
+	                            	 <A class="emotion" style="background-position: -1824px 0px;" 
+onclick="return ins_e(76);" href="javascript:;"></A>                            
+	                            	 <A class="emotion" style="background-position: -1848px 0px;" 
+onclick="return ins_e(77);" href="javascript:;"></A>                            
+	                            	 <A class="emotion" style="background-position: -1872px 0px;" 
+onclick="return ins_e(78);" href="javascript:;"></A>                            
+	                            	 <A class="emotion" style="background-position: -1896px 0px;" 
+onclick="return ins_e(79);" href="javascript:;"></A>                            
+	                            	 <A class="emotion" style="background-position: -1920px 0px;" 
+onclick="return ins_e(80);" href="javascript:;"></A>                            
+	                            	 <A class="emotion" style="background-position: -1944px 0px;" 
+onclick="return ins_e(81);" href="javascript:;"></A>                            
+	                            	 <A class="emotion" style="background-position: -1968px 0px;" 
+onclick="return ins_e(82);" href="javascript:;"></A>                            
+	                            	 <A class="emotion" style="background-position: -1992px 0px;" 
+onclick="return ins_e(83);" href="javascript:;"></A>                            
+	                            	 <A class="emotion" style="background-position: -2016px 0px;" 
+onclick="return ins_e(84);" href="javascript:;"></A>                            
+	                            	 <A class="emotion" style="background-position: -2040px 0px;" 
+onclick="return ins_e(85);" href="javascript:;"></A>                            
+	                            	 <A class="emotion" style="background-position: -2064px 0px;" 
+onclick="return ins_e(86);" href="javascript:;"></A>                            
+	                            	 <A class="emotion" style="background-position: -2088px 0px;" 
+onclick="return ins_e(87);" href="javascript:;"></A>                            
+	                            	 <A class="emotion" style="background-position: -2112px 0px;" 
+onclick="return ins_e(88);" href="javascript:;"></A>                            
+	                            	 <A class="emotion" style="background-position: -2136px 0px;" 
+onclick="return ins_e(89);" href="javascript:;"></A>                            
+	                            	 <A class="emotion" style="background-position: -2160px 0px;" 
+onclick="return ins_e(90);" href="javascript:;"></A>                            
+	                            	 <A class="emotion" style="background-position: -2184px 0px;" 
+onclick="return ins_e(91);" href="javascript:;"></A>                            
+	                            	 <A class="emotion" style="background-position: -2208px 0px;" 
+onclick="return ins_e(92);" href="javascript:;"></A>                            
+	                            	 <A class="emotion" style="background-position: -2232px 0px;" 
+onclick="return ins_e(93);" href="javascript:;"></A>                            
+	                            	 <A class="emotion" style="background-position: -2256px 0px;" 
+onclick="return ins_e(94);" href="javascript:;"></A>                            
+	                            	 <A class="emotion" style="background-position: -2280px 0px;" 
+onclick="return ins_e(95);" href="javascript:;"></A>                            
+	                            	 <A class="emotion" style="background-position: -2304px 0px;" 
+onclick="return ins_e(96);" href="javascript:;"></A>                            
+	                            	 <A class="emotion" style="background-position: -2328px 0px;" 
+onclick="return ins_e(97);" href="javascript:;"></A>                            
+	                            	 <A class="emotion" style="background-position: -2352px 0px;" 
+onclick="return ins_e(98);" href="javascript:;"></A>                            
+	                            	 <A class="emotion" style="background-position: -2376px 0px;" 
+onclick="return ins_e(99);" href="javascript:;"></A>                            
+	                            	 <A class="emotion" style="background-position: -2400px 0px;" 
+onclick="return ins_e(100);" href="javascript:;"></A>                            
+	                            	 <A class="emotion" style="background-position: -2424px 0px;" 
+onclick="return ins_e(101);" href="javascript:;"></A>                            
+	                            	 <A class="emotion" style="background-position: -2448px 0px;" 
+onclick="return ins_e(102);" href="javascript:;"></A>                            
+	                            	 <A class="emotion" style="background-position: -2472px 0px;" 
+onclick="return ins_e(103);" href="javascript:;"></A>                            
+	                            	 <A class="emotion" style="background-position: -2496px 0px;" 
+onclick="return ins_e(104);" href="javascript:;"></A>                            
+	                            	 <A class="emotion" style="background-position: -2520px 0px;" 
+onclick="return ins_e(105);" href="javascript:;"></A>                            
+	                            	 <A class="emotion" style="background-position: -2544px 0px;" 
+onclick="return ins_e(106);" href="javascript:;"></A>                            
+	                            	 <A class="emotion" style="background-position: -2568px 0px;" 
+onclick="return ins_e(107);" href="javascript:;"></A>                            
+	                            	 <A class="emotion" style="background-position: -2592px 0px;" 
+onclick="return ins_e(108);" href="javascript:;"></A>                            
+	                            	 <A class="emotion" style="background-position: -2616px 0px;" 
+onclick="return ins_e(109);" href="javascript:;"></A>                            
+	                            	 <A class="emotion" style="background-position: -2640px 0px;" 
+onclick="return ins_e(110);" href="javascript:;"></A>                            
+	                            	 <A class="emotion" style="background-position: -2664px 0px;" 
+onclick="return ins_e(111);" href="javascript:;"></A>                            
+	                            	 <A class="emotion" style="background-position: -2688px 0px;" 
+onclick="return ins_e(112);" href="javascript:;"></A>                            
+	                            	 <A class="emotion" style="background-position: -2712px 0px;" 
+onclick="return ins_e(113);" href="javascript:;"></A>                            
+	                            	 <A class="emotion" style="background-position: -2736px 0px;" 
+onclick="return ins_e(114);" href="javascript:;"></A>                            
+	                            	 <A class="emotion" style="background-position: -2760px 0px;" 
+onclick="return ins_e(115);" href="javascript:;"></A>                            
+	                            	 <A class="emotion" style="background-position: -2784px 0px;" 
+onclick="return ins_e(116);" href="javascript:;"></A>                            
+	                            	 <A class="emotion" style="background-position: -2808px 0px;" 
+onclick="return ins_e(117);" href="javascript:;"></A>                            
+	                            	 <A class="emotion" style="background-position: -2832px 0px;" 
+onclick="return ins_e(118);" href="javascript:;"></A>                            
+	                            	 <A class="emotion" style="background-position: -2856px 0px;" 
+onclick="return ins_e(119);" href="javascript:;"></A>                            
+	                            	 <A class="emotion" style="background-position: -2880px 0px;" 
+onclick="return ins_e(120);" href="javascript:;"></A>                            
+	                            	 <A class="emotion" style="background-position: -2904px 0px;" 
+onclick="return ins_e(121);" href="javascript:;"></A>                            
+	                            	 <A class="emotion" style="background-position: -2928px 0px;" 
+onclick="return ins_e(122);" href="javascript:;"></A>                            
+	                            	 <A class="emotion" style="background-position: -2952px 0px;" 
+onclick="return ins_e(123);" href="javascript:;"></A>                            
+	                            	 <A class="emotion" style="background-position: -2976px 0px;" 
+onclick="return ins_e(124);" href="javascript:;"></A>                            
+	                            	 <A class="emotion" style="background-position: -3000px 0px;" 
+onclick="return ins_e(125);" href="javascript:;"></A>                            
+	                            	 <A class="emotion" style="background-position: -3024px 0px;" 
+onclick="return ins_e(126);" href="javascript:;"></A>                            
+	                            	 <A class="emotion" style="background-position: -3048px 0px;" 
+onclick="return ins_e(127);" href="javascript:;"></A>                            
+	                            	 <A class="emotion" style="background-position: -3072px 0px;" 
+onclick="return ins_e(128);" href="javascript:;"></A>                            
+	                            	 <A class="emotion" style="background-position: -3096px 0px;" 
+onclick="return ins_e(129);" href="javascript:;"></A>                            
+	                            	 <A class="emotion" style="background-position: -3120px 0px;" 
+onclick="return ins_e(130);" href="javascript:;"></A>                            
+	                            	 <A class="emotion" style="background-position: -3144px 0px;" 
+onclick="return ins_e(131);" href="javascript:;"></A>                            
+	                            	 <A class="emotion" style="background-position: -3168px 0px;" 
+onclick="return ins_e(132);" href="javascript:;"></A>                            
+	                            	 <A class="emotion" style="background-position: -3192px 0px;" 
+onclick="return ins_e(133);" href="javascript:;"></A>                            
+	                            	 <A class="emotion" style="background-position: -3216px 0px;" 
+onclick="return ins_e(134);" href="javascript:;"></A>                            
+	                            	 
+<DIV class="clear"></DIV></DIV></DIV></DIV></DIV></DIV></FORM></DIV></DIV>
+<DIV id="RelativeBlogs"><STRONG><A id="btn_close">关闭</A>相关文章阅读</STRONG>	 
+<UL>
+  <LI><SPAN class="date">2013/06/19</SPAN>		 <A title="Git和GitHub相关资料" href="http://my.oschina.net/zozol1990/blog/138872">Git和GitHub相关资料</A>
+  	 </LI>
+  <LI><SPAN class="date">2013/12/29</SPAN>		 <A title="Git &amp;&amp; Github 快速入门" 
+  href="http://my.oschina.net/lampdraem/blog/188603">Git &amp;&amp; Github 
+  快速入门</A>	 </LI>
+  <LI><SPAN class="date">2013/04/29</SPAN>		 <A title="linux下git与github简单使用" 
+  href="http://my.oschina.net/aaronzh/blog/126367">linux下git与github简单使用...</A>
+  	 </LI>
+  <LI><SPAN class="date">2014/12/21</SPAN>		 <A title="XCode与Git的完美融合，不再依赖其它Git客户端" 
+  href="http://my.oschina.net/u/855386/blog/359042">XCode与Git的完美融合，不再依赖其它...</A>
+  	 </LI>
+  <LI><SPAN class="date">2016/03/09</SPAN>		 <A title="GitHub当道，菜鸟也为Git疯狂" href="http://my.oschina.net/kkdong/blog/633654">GitHub当道，菜鸟也为Git疯狂</A>
+  	 </LI></UL></DIV>
+<SCRIPT src="/action/visit/blog?id=159114" defer="defer" type="text/javascript"></SCRIPT>
+ 
+<SCRIPT src="/js/sh309/scripts/xregexp-min.js?t=1451964199000" type="text/javascript"></SCRIPT>
+ 
+<SCRIPT src="/js/sh309/scripts/shCore.min.js?t=1451964199000" type="text/javascript"></SCRIPT>
+ 
+<SCRIPT src="/js/sh309/scripts/shAutoloader.js?t=1451964199000" type="text/javascript"></SCRIPT>
+ <LINK href="Git图形化界面客户端大汇总%20-%20Amstrong的个人页面%20-%20开源中国社区_files/shCore.css" 
+rel="stylesheet" type="text/css"> <LINK href="Git图形化界面客户端大汇总%20-%20Amstrong的个人页面%20-%20开源中国社区_files/shThemeDefault.css" 
+rel="Stylesheet" type="text/css"> 
+<SCRIPT type="text/javascript">
+    SyntaxHighlighter.autoloader(
+            'applescript			/js/sh309/scripts/shBrushAppleScript.js?t=1451964199000',
+            'actionscript3 as3		/js/sh309/scripts/shBrushAS3.js?t=1451964199000',
+            'bash shell				/js/sh309/scripts/shBrushBash.js?t=1451964199000',
+            'coldfusion cf			/js/sh309/scripts/shBrushColdFusion.js?t=1451964199000',
+            'cpp c					/js/sh309/scripts/shBrushCpp.js?t=1451964199000',
+            'obj-c objc				/js/sh309/scripts/shBrushObjC.js?t=1451964199000',
+            'c# c-sharp csharp		/js/sh309/scripts/shBrushCSharp.js?t=1451964199000',
+            'css					/js/sh309/scripts/shBrushCss.js?t=1451964199000',
+            'delphi pascal			/js/sh309/scripts/shBrushDelphi.js?t=1451964199000',
+            'diff patch pas			/js/sh309/scripts/shBrushDiff.js?t=1451964199000',
+            'erl erlang				/js/sh309/scripts/shBrushErlang.js?t=1451964199000',
+            'groovy					/js/sh309/scripts/shBrushGroovy.js?t=1451964199000',
+            'haxe hx				/js/sh309/scripts/shBrushHaxe.js?t=1451964199000',
+            'java					/js/sh309/scripts/shBrushJava.js?t=1451964199000',
+            'jfx javafx				/js/sh309/scripts/shBrushJavaFX.js?t=1451964199000',
+            'js jscript javascript	/js/sh309/scripts/shBrushJScript.js?t=1451964199000',
+            'perl pl				/js/sh309/scripts/shBrushPerl.js?t=1451964199000',
+            'php					/js/sh309/scripts/shBrushPhp.js?t=1451964199000',
+            'text plain				/js/sh309/scripts/shBrushPlain.js?t=1451964199000',
+            'py python				/js/sh309/scripts/shBrushPython.js?t=1451964199000',
+            'ruby rails ror rb		/js/sh309/scripts/shBrushRuby.js?t=1451964199000',
+            'scala					/js/sh309/scripts/shBrushScala.js?t=1451964199000',
+            'sql					/js/sh309/scripts/shBrushSql.js?t=1451964199000',
+            'vb vbnet				/js/sh309/scripts/shBrushVb.js?t=1451964199000',
+            'xml xhtml xslt html	/js/sh309/scripts/shBrushXml.js?t=1451964199000'
+    );
+    SyntaxHighlighter.all();
+</SCRIPT>
+ <!--[if lt IE 7]>
+<script type="text/javascript" src="/js/minmax.js?t=1451964199000"></script>
+<![endif]--> 
+<SCRIPT type="text/javascript">
+<!--
+var posting = false;
+var upprev_closed = false;
+var upprev_hidden = true;
+
+$(document).ready(function(){
+				
+    $('.BlogContent img').css('cursor','pointer');
+    jQuery.each($('.BlogContent img'),function(idx,v){
+    	$(v).wrap("<a href='"+$(this).attr('src')+"' target='_blank'></a>");
+    });
+	$('#form_comment').ajaxForm({
+		dataType: 'json',
+		bforeSubmit: function(){
+			posting = true;
+		},
+		success: function(json) {
+        	if(json.msg){
+				///alert(json.msg);
+				$('#cmt_tip').html("<span style='color:#C00;'>"+json.msg+"</span>");
+				$('#wmd-input').focus();
+			}else{
+				var url = "http://my.oschina.net/amstrong/blog_post?_cmt_blog="+json.blog+"&_cmt_user="+json.user+"&_cmt_id="+json.id;
+        		jQuery.get(url, function(data){
+    				$('#form_comment .NoData').hide();
+        			$('ul#BlogComments').append(data);
+        			$('#form_comment').resetForm();
+        		});
+			}
+		}
+	});
+
+    var at_datas = [];
+    $('img.SmallPortrait').each(function(){
+        var name = $(this).attr('alt');
+        if(jQuery.inArray(name, at_datas) < 0 && name != '${g_user.name}')
+            at_datas.push(name);
+    });
+    $("#form_comment textarea").atWho("@", {data: at_datas});
+	$("#form_comment textarea").on("keydown",function(event){
+		if((event.metaKey || event.ctrlKey) && event.keyCode==13){
+			$("#form_comment").submit();
+		}
+	});
+	$("#submiting").ajaxStart(function(){
+	   if(posting){
+    	   $('#btn_submit').attr("disabled","disabled");
+           $(this).show();
+	   }
+    });
+	$("#submiting").ajaxComplete(function(event,request, settings){
+	   if(posting){
+           $(this).hide();
+    	   $('#btn_submit').attr("disabled","");
+	   }
+	   posting = false;
+    });
+
+    $(window).scroll(function() {
+        var lastScreen;
+        if ($("#postform").length > 0)
+            lastScreen = getScrollY() + $(window).height() < $("#postform").offset().top * 1 ? false : true;
+        else
+            lastScreen = getScrollY() + $(window).height() < $(document).height() * 1 ? false : true;
+        if (lastScreen && !upprev_closed) {
+            $("#RelativeBlogs").stop().animate({right:"0px"});
+            upprev_hidden = false;
+        }
+        else if (upprev_closed && getScrollY() == 0) {
+            upprev_closed = false;
+        }
+        else if (!upprev_hidden) {
+            upprev_hidden = true;
+            $("#RelativeBlogs").stop().animate({right:"-400px"});
+        }
+    });
+    $("#RelativeBlogs #btn_close").click(function() {
+        $("#RelativeBlogs").stop().animate({right:"-400px"});
+        upprev_closed = true;
+        upprev_hidden = true;
+    });
+});
+function delete_c(nid,uid,cid){
+  if(confirm("您确认要删除此篇评论？")){
+    var args = "cmt="+cid+"#"+uid+"#"+nid;
+    ajax_post("/action/blog/delete_blog_comments?space=219038",args,function(){$("#cmt_"+nid+"_"+uid+"_"+cid).fadeOut();});
+  }
+}
+var replyinline_dup = false;
+function ReplyInline(blog,user,reply){
+	$('.inline_reply').empty();
+	var div_id = '#inline_reply_of_'+blog+'_'+user+'_'+reply;
+	$('#inline_reply_id').val(user+'_'+reply);
+	$(div_id).html($('#inline_reply_editor').html());
+	$('#ccom_content').focus();
+	$('#btn_close_inline_reply').click(function(){
+		$(div_id).empty();
+	});
+	var li_id = '#cmt_'+blog+'_'+user+'_'+reply;
+	var p_li = $(li_id);
+	var tip = $("#ficmp_msg");
+	$('#form_inline_comment').ajaxForm({
+		dataType: 'json',
+		beforeSubmit:function(){
+			if(replyinline_dup){
+			    tip.html("正在发表评论，请勿重复提交");
+				return false;
+			}
+			replyinline_dup = true;
+			return true;
+		},
+    	success: function(json) {
+			tip.html("");
+        	if(json.msg){
+				tip.html(json.msg);
+				replyinline_dup = false;
+        	}
+        	else if(json.id){
+    			ajax_post("http://my.oschina.net/blog/show_post","_cmt_user="+"&_cmt_id="+json.id,function(html){
+					if(html.length > 0){
+						$(html).insertAfter(p_li);
+						$(div_id).empty();
+					}else{
+						tip.html("获取评论失败");
+					}
+					setTimeout(function(){
+    					replyinline_dup = false;
+					},5000)
+				});
+        	}
+    	}
+	});
+}
+function edit_catalogs(qid){
+	popup("/set-catalogs?parent=1&type=3&id="+qid);
+}
+function vote(blogid){
+		alert("必须登录后才能操作 :)");
+	}
+function toggle_recomm(blogid){
+	ajax_post("/action/blog/toggle_recomm","id="+blogid,function(html){
+		if(html == '-1')
+			alert("文章不存在");
+		else if(html == 0){
+			$('#lnk_recomm_'+blogid).removeClass('recommend');
+			$('#lnk_recomm_'+blogid).text("未推荐");
+		}
+		else if(html == 1){
+			$('#lnk_recomm_'+blogid).addClass('recommend');
+			$('#lnk_recomm_'+blogid).text("已推荐");
+		}
+	});
+}
+	var textbox = $("#wmd-input").textbox({
+		maxLength: 1000,
+    	onInput: function(event, status) {
+			var txt = jQuery.trim($("#wmd-input").val());
+    	}
+	});
+	function insert_projects() {
+		textbox.insertText('#此处输入软件名#');
+		$('#TweetEmotions').removeAttr('txt_id');
+	}
+	function insert_projects_c() {
+    	var combox = $("#ccom_content").textbox({
+    		maxLength: 1000,
+        	onInput: function(event, status) {
+    			var txt = jQuery.trim($("#ccom_content").val());
+        	}
+    	});
+		combox.insertText('#此处输入软件名#');
+		$('#TweetEmotions').removeAttr('txt_id');
+	}
+	function insert_emotions(id,obj) {
+		if(id) {
+			$('#TweetEmotions').attr('txt_id',id);
+			var thiz = $(obj);
+			var offset = thiz.offset();
+			var poffset = thiz.offsetParent().offset();
+        	var left = offset.left-poffset.left;
+        	var top = offset.top-poffset.top;
+			$('#TweetFormPopupWraper').css({'top':top+25 +'px','left':left+'px'});
+		}
+		else {
+			$('#TweetFormPopupWraper').css({'top':'','left':''});
+			$('#TweetEmotions').removeAttr('txt_id');
+		}
+		$('#TweetEmotions').show();
+		$('#TweetImages').hide();
+		$('#TweetFormPopupArrow').removeClass('projects');
+		$('#TweetFormPopupArrow').removeClass('images');
+		$('#TweetFormPopupArrow').addClass('emotions');
+		$('#TweetFormPopupWraper').slideDown('fast');
+	}
+	function ins_e(idx){
+		var txt_id = $('#TweetEmotions').attr('txt_id');
+		if(!txt_id)
+			textbox.insertText('['+idx+']');
+		else {
+			insertAtCursor(txt_id,'['+idx+']');
+		}
+		$('#TweetFormPopupWraper').hide();
+		return false;
+	}
+	function insertAtCursor(tbid,str) {
+		var tb = document.getElementById(tbid);
+        if (document.selection){
+			tb.focus();
+			var r = document.selection.createRange();
+            document.selection.empty();
+            r.text = str;
+            r.collapse();
+            r.select();
+        }
+        else{
+            var newstart = tb.selectionStart+str.length;
+            tb.value=tb.value.substr(0,tb.selectionStart)+str+tb.value.substring(tb.selectionEnd);
+            tb.selectionStart = newstart;
+            tb.selectionEnd = newstart;
+        }
+	}
+//-->
+</SCRIPT>
+                </DIV>
+<DIV class="clear"></DIV>
+<DIV id="OSC_Footer">
+<STYLE>
+.oscapp {text-align:left; width:220px;}
+.oscapp span {float:left;width:140px;}
+.oscapp a {float:left;text-indent:-9999em;width:16px;margin-left:8px;}
+.oscapp a.android {background:url('/img/android.gif') no-repeat left center;}
+.oscapp a.iphone {background:url('/img/iphone.gif') no-repeat left center;}
+.oscapp a.wp7 {background:url('/img/wp7.gif') no-repeat left center;}
+</STYLE>
+ 
+<TABLE width="100%">
+  <TBODY>
+  <TR>
+    <TD align="left">© 开源中国(OSChina.NET) | <A href="http://www.oschina.net/home/aboutosc">关于我们</A> 
+      | <A href="mailto:market@oschina.cn">广告联系</A> | <A href="http://weibo.com/oschina2010" 
+      target="_blank">@新浪微博</A> | <A href="http://m.oschina.net/">开源中国手机版</A> | 
+      <A style="color: rgb(115, 117, 115); text-decoration: none;" href="http://www.miitbeian.gov.cn/" 
+      target="_blank">粤ICP备12009483号-3</A></TD>
+    <TD class="oscapp"><SPAN>开源中国手机客户端：</SPAN>	 <A title="Android客户端" class="android" 
+      href="http://www.oschina.net/app">Android</A>	 <A title="iPhone 客户端" 
+      class="iphone" href="http://www.oschina.net/app">iPhone</A>	 <A title="Windows Phone 客户端" 
+      class="wp7" href="http://www.oschina.net/app">WP7</A> </TD></TR>
+  <TR>
+    <TD align="left" colspan="2">开源中国社区(OSChina.net)是工信部 <A href="http://www.copu.org.cn/" 
+      target="_blank">开源软件推进联盟</A> 指定的官方社区</TD></TR></TBODY></TABLE>
+<SCRIPT type="text/javascript">
+<!--
+if (top.location != self.location)top.location=self.location;
+//-->
+</SCRIPT>
+</DIV></DIV>
+<STYLE>
+span.love{
+	position: relative;
+    min-width: 35px;
+    display: inline-block;
+    height: 12px;
+}
+span.love a{
+    position: absolute;
+    right: 0px;
+}
+</STYLE>
+ 
+<SCRIPT src="/action/visit/space?id=219038" type="text/javascript"></SCRIPT>
+ 
+<SCRIPT src="/js/2014/ImageTool.js?t=1451964198000?20140124" type="text/javascript"></SCRIPT>
+ 
+<SCRIPT type="text/javascript">
+<!--
+$(document).ready(function() {
+
+	SelectStyle("#search-item",".search_list");
+	$('.Tweet .photo img').live("click",function(){
+		var T=$(this);
+		var t=this;
+		var bigImg = T.attr('bi');
+		var smallImg = T.attr('si');
+		var src = T.attr('src');
+		var newsrc = (bigImg == src)?smallImg:bigImg;
+		var imgId = T.attr('id');
+		if(T.parent().attr("id") == "img_container"){
+			T.parent().replaceWith(T);
+			T.removeAttr("style");
+			T.removeAttr("width");
+			T.removeAttr("height");
+		}
+		if(newsrc == bigImg){
+    		var loading=$('<img alt="loading" src="/img/loading.gif?t=1451964198000"/>');
+			var top = T.position().top+T.height()/2-8;
+			var left = T.position().left+T.width()/2-8;
+			loading.css({
+				'position':'absolute',
+				'z-index':999,
+				'top':top,
+				'left':left
+			});
+    		T.before(loading);
+			var tImg=new Image();
+			tImg.src=newsrc;
+			tImg.onload=function(){afterImgLoad(T,loading,imgId,newsrc,bigImg);};
+		}
+		else{
+			T.attr("src",newsrc);
+			$('#img_menu_'+imgId).remove();
+		}
+		return false;
+	});
+	
+	$(".tweet_thumb_wrapper").mouseenter(function(){
+		$(this).find(".tweet_play_video").css("opacity",1);
+	}).mouseleave(function(){
+		$(this).find(".tweet_play_video").css("opacity",0.7);
+	});
+
+    $("#TForm textarea").atWho("@", function(query, callback){
+        jQuery.ajax({
+            type:'POST',
+            url:"/action/tweet/at_suggest",
+            data:{'q':query},
+            dataType:'json',
+            success:function(json){
+                callback(json);
+            }
+        });
+    });
+	
+	toggle_tweet_video = function(id){
+		$("#tweet_video_thumb_"+id).toggle();
+		var video = $("#tweet_video_"+id).toggle();
+		video.siblings(".tweet_video_operation,.tweet_thumb_wrapper").toggle();
+	};
+	
+	function afterImgLoad(T,loading,imgId,url,bigImg){
+		var lnks = "<div id='img_menu_"+imgId+"' class='ImgMenu'>";
+		lnks += "<a href='#' onclick='$(\"#"+imgId+"\").click();return false;'>收起</a>";
+		lnks += "<a href='javascript:void(0);' onclick='rotate(this,\""+imgId+"\",0);' id='rotate_btn'>旋转</a>";
+		lnks += "<a href='"+bigImg+"' target='_blank'>查看原图</a></div>";			
+		loading.remove();
+		T.attr("src",url);
+		T.before(lnks);
+	}
+});
+
+function set_fellow_memo(fid,fname){
+	popup("/action/ajax/set_fellow_memo","friend="+fid+"&name="+fname);
+}
+
+function deleteMsgs(uid, fid, fname){
+	if(!confirm("你确认要清除与‘"+fname+"’的所有私信吗？"))
+		return ;
+	var args = "user="+uid+"&friend="+fid;
+	ajax_post("/action/msg/delete_user",args,function(html){
+		if(html.length > 0)
+			alert(html);
+		else{
+			$('#Msg_'+fid).fadeOut();
+		}
+	});
+}
+
+function follow_user(uid, uname){
+	just_follow(uid, uname,'${g_user.id}'); //oschina.js
+}
+
+function unfollow_user(uid, uname){
+	if(confirm("确定不再关注" + uname + "了吗？"))
+	just_unfollow(uid,'${g_user.id}',function(){
+		alert('已取消对 ' + uname + ' 的关注');
+	});
+}
+
+function tweet_reply(logid){
+	var r = $('#LogReply_'+logid);
+	if(!r.is(":hidden")){
+		close_tweet_reply(logid);
+		return ;
+	}
+	r.html("<div class='TweetRplsWrapper'><span class='loading'>正在加载评论，请稍候...</span></div>")
+	r.show();
+	r.load("http://my.oschina.net/amstrong/tweet-rpls?log="+logid,function(){
+		$('#edt_tweet_post_'+logid).focus();
+        var at_datas = [];
+        $(this).find("img.SmallPortrait").each(function(){
+            var name = $(this).attr('alt');
+            if(jQuery.inArray(name, at_datas) < 0 && name != '${g_user.name}')
+                at_datas.push(name);
+        });
+        $(this).find("input.TXT_TweetRpl_Text").atWho("@", {data: at_datas});
+        $('#TweetReplyForm_'+logid).ajaxForm({
+        	dataType: 'json',
+			beforeSubmit: function(arr, form, options){
+				$('#BTN_TweetReply_'+logid).attr('disabled','disabled');
+			},
+            success: function(json) {
+            	if(json.msg){
+        			alert(json.msg);
+            	}else if(json.log){
+					$('#log_reply_count_'+logid).text(json.reply_count);
+        			//插入新评论					
+					ajax_get("/action/ajax/get_tweet_reply?id=" + json.log,true,function(html){
+						$('#LogReply_'+logid+' ul').prepend(html);
+					});
+					$('#edt_tweet_post_'+logid).val('');
+            	}
+				$('#BTN_TweetReply_'+logid).removeAttr('disabled');
+            }
+        });
+	});
+}
+function close_tweet_reply(logid){
+	$('#LogReply_'+logid).empty();
+	$('#LogReply_'+logid).hide();
+	$('#Logs .userlogs li').removeClass('hover');
+}
+function reply_rtweet(logid, rid, toname){
+	var edtPost = $('#edt_tweet_post_' + logid);
+	var old_v = edtPost.val();
+	if(old_v.length > 0)
+		edtPost.val(old_v + ',@'+toname+' ');
+	else
+		edtPost.val('回复 @'+toname+' : ');
+	edtPost.focus();
+	edtPost.caretPos(edtPost.val().length); }
+function delete_tweet(logid){
+	if(confirm("确认要删除这条信息吗？"))
+	ajax_post("/action/tweet/delete?log="+logid+"&user=${g_user.id}","",function(html){
+		if(html.length==0){
+			var elem = $('#LI_'+logid);
+			if(elem.length > 0)
+				$('#LI_'+logid).fadeOut();
+			else
+				location.reload();
+		}
+	});
+}
+function delete_tweet_reply(logid){
+	if(confirm("确认要删除这条评论吗？"))
+	ajax_post("/action/tweet/delete_reply?id="+logid+"&user=${g_user.id}","",function(html){
+		if(html.length > 0)
+			$('#LI_'+logid).fadeOut();
+	});
+}
+
+function delete_blog(blog_id){
+    if(!confirm("文章删除后无法恢复，请确认是否删除此篇文章？")) return;
+    ajax_post("/action/blog/delete?id="+blog_id+"&user=${g_user.id}&user_code=${g_user.activate_code}","",function(html){
+    	location.href="http://my.oschina.net/amstrong/blog";
+    });
+}
+
+function SelectStyle(on,option){
+	var currentSort = $(on).attr('id');
+	var currentText = $(option+" li."+currentSort+" a").html();
+	$(on + " .text").html(currentText);
+	$(on + " .text").hover(function(){
+		$(this).addClass("hover")
+	},function(){
+		$(this).removeClass("hover")
+	});
+	$(option+" li a").each(function(index){
+		$(this).click(function(){
+			thishtml = $(this).html();
+			$(on + " .text").removeClass("on").html(thishtml);		
+			$(".selectbox select ").find("option").removeAttr('selected').eq(index).attr("selected","selected");	
+			$(option).hide()
+			return false;
+		});
+		
+	});		
+	
+	$(".selectbox").click(function(){		
+		$(option).toggle();
+		$(on + " .text").toggleClass("on");		
+		return false;
+	});
+	$(document).click(function(){
+		$(option).hide();	
+		$(on + " .text").removeClass("on");
+	});
+	$(document).trigger('click');
+
+}
+
+//-->
+//添加点赞脚本开始
+function makeAsLove(obj){
+
+	var _this = $(obj);
+	var _hc = _this.hasClass('fa-thumbs-o-up');
+	
+	var _enable = _this.attr('data-click');
+	if (_enable != undefined && 'dis' === _enable) {
+	    return;
+	}
+
+	var makeAsLoveId =$(obj).attr("id");
+	var temp = makeAsLoveId.split("_");
+	var logid = temp[1];
+	var ownerOfLog = temp[2];
+	var clickCount = $("#love_"+logid+"_hidden_clickCount").val();
+	var user_code = $("#love_"+logid+"_user_code").val();
+	var current_love_count = $("#love_"+logid+"_hidden").val();
+	$("#love_userlist_"+logid+"_hidden").val();
+	
+	_this.animate({
+            'font-size': '20px'
+        },300, function () {
+            _this.attr('data-click', 'dis');
+            setTimeout(function(){
+                _this.attr('data-click', 'enable');
+            },1000);
+            setTimeout(function () {
+                if (_hc) {
+                    _this.removeClass('fa-thumbs-o-up');
+                    _this.addClass('fa-thumbs-up');
+                } else {
+                    _this.removeClass('fa-thumbs-up');
+                    _this.addClass('fa-thumbs-o-up');
+                }
+                _this.css({
+                    'font-size': '14px'
+                });
+
+              $.ajax({
+		            url:"/action/tweet/makeAsLove",
+		            type:"POST",
+		            data:{
+		                logid:logid,
+		                user_code:user_code,
+		                current_love_count:current_love_count,
+		                ownerOfLog:ownerOfLog,
+		                clickCount:clickCount
+		            },
+		            success:function(result){
+		                var dataResult =  jQuery.parseJSON(result)
+		                var resultCode = dataResult.code;
+		                $("#love_"+logid+"_hidden_clickCount").val(parseInt(dataResult.clickCount));
+		                if(resultCode=="200"){
+		                    var love = dataResult.love_count;
+		                    var countOfLove = parseInt(love);
+		                    $("#love_"+logid).text(countOfLove);
+		                    $("#love_userlist_"+logid).text(countOfLove);
+		                    var imgEle = '<a href="$link.auto_user($g_user, false)" target="_blank" id="me_'+logid+'">';
+							var spanEle = '<span class="TweetUserPic"><img src="/img/portrait.gif?t=1451964198000" align="absmiddle" alt="非会员用户" title="非会员用户" class="SmallPortrait" user=""/></span></a>';
+		                    $("#user_pic_"+logid).prepend(imgEle+spanEle);
+		                    $("#love_"+logid).text(countOfLove);
+		                    $("#love_"+logid+"_hidden").val(countOfLove);
+		                    $("#love_userlist_"+logid+"hidden").val(countOfLove);
+		                    $("#love_userlist_"+logid).text(countOfLove+"个人觉得很赞");
+		                    //$("#"+makeAsLoveId).attr("class","loved");
+		                    return;
+		                }
+		                if(resultCode=="201"){
+		                	var love = dataResult.love_count;
+			                var countOfLove = parseInt(love);
+			                $("#love_userlist_"+logid).text(countOfLove);
+		                    $("#me_"+logid).empty();
+		                    $("#love_"+logid).text(countOfLove);
+		                    $("#love_"+logid+"_hidden").val(countOfLove);
+		                    if(countOfLove<=0){
+		                    	$("#love_userlist_"+logid).text("");
+		                    }else{
+		                    	$("#love_userlist_"+logid).text(countOfLove+"个人觉得很赞");
+		                    }
+		                    //$("#"+makeAsLoveId).removeClass("loved");
+		                    return;
+		                }
+		                $("#" + makeAsLoveId).attr("class", "fa fa-thumbs-o-up");
+		                $("#info_"+logid).text(dataResult.result);
+		                setTimeout(function(){
+		                	$("#info_"+logid).text("");
+		                },3000);
+		            }
+
+            }, 400);
+        });
+	
+        });
+}
+</SCRIPT>
+ 
+<SCRIPT>
+	function toggle(){
+		var flag= $("#hiddenflag").val();
+		if(flag=="true"){
+			$(".hiddenPic").hide();
+			$("#hiddenflag").val(false);
+		}else if(flag=="false"){
+			$(".hiddenPic").show();
+			$("#hiddenflag").val(true);
+		}
+	}
+</SCRIPT>
+ </BODY></HTML><!-- Generated by OsChina.NET (init:1[ms],page:61[ms],ip:222.240.205.234) -->

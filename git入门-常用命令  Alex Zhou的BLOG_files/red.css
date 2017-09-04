@@ -1,0 +1,39 @@
+.icheckbox_flat-red {
+	background: url("red.png") no-repeat; margin: 0px; padding: 0px; border: currentColor; width: 20px; height: 20px; display: inline-block; cursor: pointer;
+}
+.iradio_flat-red {
+	background: url("red.png") no-repeat; margin: 0px; padding: 0px; border: currentColor; width: 20px; height: 20px; display: inline-block; cursor: pointer;
+}
+.icheckbox_flat-red {
+	
+}
+.checked.icheckbox_flat-red {
+	background-position: -22px 0px;
+}
+.disabled.icheckbox_flat-red {
+	background-position: -44px 0px; cursor: default;
+}
+.disabled.checked.icheckbox_flat-red {
+	background-position: -66px 0px;
+}
+.iradio_flat-red {
+	background-position: -88px 0px;
+}
+.checked.iradio_flat-red {
+	background-position: -110px 0px;
+}
+.disabled.iradio_flat-red {
+	background-position: -132px 0px; cursor: default;
+}
+.disabled.checked.iradio_flat-red {
+	background-position: -154px 0px;
+}
+@media not all, not all, not all, not all
+{
+.icheckbox_flat-red {
+	background-image: url("red@2x.png"); background-size: 176px 22px; -webkit-background-size: 176px 22px;
+}
+.iradio_flat-red {
+	background-image: url("red@2x.png"); background-size: 176px 22px; -webkit-background-size: 176px 22px;
+}
+}

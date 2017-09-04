@@ -1,0 +1,18 @@
+.tip-yellowsimple {
+	padding: 6px 8px; border-radius: 4px; border: 1px solid rgb(199, 191, 147); border-image: none; text-align: left; color: rgb(0, 0, 0); z-index: 1000; min-width: 50px; max-width: 300px; background-color: rgb(255, 249, 201); -moz-border-radius: 4px; -webkit-border-radius: 4px;
+}
+.tip-yellowsimple .tip-inner {
+	font: 12px/16px arial, helvetica, sans-serif; font-size-adjust: none; font-stretch: normal;
+}
+.tip-yellowsimple .tip-arrow-top {
+	background: url("tip-yellowsimple_arrows.gif") no-repeat; left: 50%; top: 0px; width: 9px; height: 6px; margin-top: -6px; margin-left: -5px;
+}
+.tip-yellowsimple .tip-arrow-right {
+	background: url("tip-yellowsimple_arrows.gif") no-repeat -9px 0px; left: 100%; top: 50%; width: 6px; height: 9px; margin-top: -4px; margin-left: 0px;
+}
+.tip-yellowsimple .tip-arrow-bottom {
+	background: url("tip-yellowsimple_arrows.gif") no-repeat -18px 0px; left: 50%; top: 100%; width: 9px; height: 6px; margin-top: 0px; margin-left: -5px;
+}
+.tip-yellowsimple .tip-arrow-left {
+	background: url("tip-yellowsimple_arrows.gif") no-repeat -27px 0px; left: 0px; top: 50%; width: 6px; height: 9px; margin-top: -4px; margin-left: -6px;
+}
